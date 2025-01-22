@@ -1,0 +1,227 @@
+.menu-container {
+  border-color: solid black;
+  border-radius: 5mm;
+  background: linear-gradient(50deg, #ffe96e 0%, #ffe96e 45%, #f6e6a3 85%);
+  background-blend-mode: multiply, multiply;
+  width: 250mm;
+  height: 350mm;
+  left: auto;
+  top: auto;
+  margin-left: 10mm;
+  margin-top: 10mm;
+  position: absolute;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0mm 0mm 2.65mm rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.menu-header {
+  color: #9c5716;
+  text-align: center;
+  font-family: 'Charm', cursive;
+  padding: 5pt;
+  margin-bottom: 1mm;
+}
+
+.menu-header h1 {
+
+  color: #9c5716;
+  /* Dark red text for title */
+  margin: 0;
+  font-style: italic;
+  font-size: 45mm;
+  font-weight: bolder;
+  position: relative;
+  top: 30mm;
+  left: 30mm;
+}
+
+.menu-header h2 {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  /* Navy blue text for subtitle */
+  font-family: 'Arial', sans-serif;
+  font-size: 15mm;
+  position: relative;
+  top: 2mm;
+  left: 30mm;
+}
+
+
+.cataName {
+  padding: 10mm;
+  font-size: 10mm;
+}
+
+.category-name {
+
+  text-align: center;
+  color: #9c5716;
+  font-size: 15mm;
+  position: relative;
+  left: 30mm;
+  bottom: 27mm;
+}
+
+.specials {
+  font-family: 'Estonia', cursive;
+  font-size: 25mm;
+  font-weight: bold;
+  margin-top: 2mm;
+  margin-left: 70mm;
+  text-align: start;
+  font-style: italic;
+}
+
+.cocktails {
+  font-family: 'Estonia', cursive;
+  font-size: 25mm;
+  font-weight: bold;
+  margin-top: 4mm;
+  margin-left: 60mm;
+  text-align: start;
+  font-style: italic;
+}
+
+.subcategory-name {
+  text-align: center;
+  font-size: 15mm;
+  color: #9c5716;
+  position: relative;
+  right: 50mm;
+  bottom: 30mm;
+}
+
+.special-item {
+  font-size: 5.2mm;
+  font-family: 'Cutive', sans-serif;
+  color: black;
+  text-align: justify;
+  padding-bottom: 2mm;
+  position: relative;
+  left: 70mm;
+}
+
+.cocktail-item {
+  font-size: 5.2mm;
+  font-family: 'Cutive', sans-serif;
+  color: black;
+  position: relative;
+  left: 60mm;
+  text-align: justify;
+  margin-top: 1mm;
+}
+
+.img1 {
+  height: 240mm;
+  width: 100mm;
+  position: absolute;
+  left: 0.1mm;
+  top: 0.1mm;
+}
+
+.img2 {
+  height: 170mm;
+  width: 110mm;
+  position: absolute;
+  left: 140mm;
+  bottom: 0.5mm;
+}
+
+.img3 {
+  height: 40mm;
+  width: 70mm;
+  position: absolute;
+  top: 0.2mm;
+  left: 180mm;
+}
+
+.img4 {
+  height: 40mm;
+  width: 70mm;
+  position: absolute;
+  bottom: -5mm;
+  left: 0.1mm;
+}
+
+.img5 {
+  position: absolute;
+  left: 70mm;
+  top: 120mm;
+  height: 50mm;
+}
+
+.img6 {
+  position: absolute;
+  left: 85mm;
+  top: 170mm;
+  height: 50mm;
+}
+
+.img7 {
+  position: absolute;
+  left: 5mm;
+  top: 200mm;
+  height: 50mm;
+}
+
+.img8 {
+  position: absolute;
+  left: 140mm;
+  bottom: 90mm;
+  height: 40mm;
+}
+
+.img9 {
+  position: absolute;
+  left: 120mm;
+  bottom: 45mm;
+  height: 40mm;
+}
+
+.img10 {
+  position: absolute;
+  left: 120mm;
+  bottom: 2mm;
+  height: 40mm;
+}
+
+.border1 {
+  position: absolute;
+  top: 97mm;
+  left: 112mm;
+  width: 20mm;
+  border-top: 1.5mm solid #060606;
+}
+
+.border2 {
+  position: relative;
+  top: 97mm;
+  left: 177mm;
+  width: 20mm;
+  border-top: 1.5mm solid #060606;
+}
+
+.item-name1 {
+  position: relative;
+
+}
+
+.item-price1 {
+  margin-top: -7mm;
+  margin-left: 100mm;
+}
+
+.item-name2 {
+  position: relative
+}
+
+.item-price2 {
+  margin-top: -7mm;
+  margin-left: 100mm;
+}
