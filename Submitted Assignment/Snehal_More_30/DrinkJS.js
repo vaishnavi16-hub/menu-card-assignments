@@ -1,228 +1,199 @@
 class MenuComponent extends HTMLElement {
-  //default configuration with class name for various elements
-
+  // Default configuration and data
   defaultConfig = {
-    containerclass: 'menu-container',
+    wrapperclass: 'menu-wrapper',
     backgroundClass: 'menu-background',
+    contentClass: 'menu-content',
     headerClass: 'menu-header',
-    titleClass: 'menu-title',
-    subtitleClass: 'menu-subtitle',
+    restorentClass: 'restorent-name',
+    discriptionClass: 'restorent-discription',
     cataName: 'cataName',
     categoryClass: 'category-name',
     subcategoryClass: 'subcategory-name',
     specialitemClass: 'special-item',
-    cocktailitemsClass: 'cocktail-item',
-    borders: ['border1', 'border2']
+    cocktailitemsClass: 'cocktail-item'
   };
-  //default data
   defaultData = {
     images: [
-      { "src": "IMG/glass1.png", "class": "img1", "alt": "img1" },
-      { "src": "IMG/glass2.png", "class": "img2", "alt": "img2" },
-      { "src": "IMG/leafcut1.png", "class": "img3", "alt": "img3" },
-      { "src": "IMG/leafcut2.png", "class": "img4", "alt": "img4" },
-      { "src": "IMG/sparkle.png", "class": "img5", "alt": "img5" },
-      { "src": "IMG/sparkle.png", "class": "img6", "alt": "img6" },
-      { "src": "IMG/sparkle.png", "class": "img7", "alt": "img7" },
-      { "src": "IMG/sparkle.png", "class": "img8", "alt": "img8" },
-      { "src": "IMG/sparkle.png", "class": "img9", "alt": "img9" },
-      { "src": "IMG/sparkle.png", "class": "img10", "alt": "img10"}
+      { src: 'IMG/glass1.png', class: 'img1', alt: 'img1' },
+      { src: 'IMG/glass2.png', class: 'img2', alt: 'img2' },
+      { src: 'IMG/leafcut1.png', class: 'img3', alt: 'img3' },
+      { src: 'IMG/leafcut2.png', class: 'img4', alt: 'img4' },
+      { src: 'IMG/sparkle.png', class: 'img5', alt: 'img5' },
+      { src: 'IMG/sparkle.png', class: 'img6', alt: 'img6' },
     ],
-
-    title: "Drinks",
-    subtitle: "menu",
-    category: "Specials",
-    subcategory: "Cocktails",
+    restorent: 'Drinks',
+    discription: 'menu',
+    category: 'Specials',
+    subcategory: 'Cocktails',
     specialitems: [
-      { name: "Special Orange Ice", price: "$3.99" },
-      { name: "Special Blue Cocktail", price: "$3.99" },
-      { name: "Special Kiwi Fruit Ice", price: "$4.50" },
-      { name: "Special Iced Lemon", price: "$6.00" },
-      { name: "Special Iced Tea", price: "$7.50" }
+      { name: 'Special Orange Ice', price: '$3.99' },
+      { name: 'Special Blue Cocktail', price: '$3.99' },
+      { name: 'Special Kiwi Fruit Ice', price: '$4.50' },
+      { name: 'Special Iced Lemon', price: '$6.00' },
+      { name: 'Special Iced Tea', price: '$7.50' },
     ],
     cocktailitems: [
-      { name: "Classic Mojito", price: "$3.99" },
-      { name: "Royal Martini", price: "$3.99" },
-      { name: "Raspberry Mojito", price: "$4.50" },
-      { name: "Retro Margarita", price: "$6.00" },
-      { name: "Classic Margarita", price: "$7.50" }
-    ]
+      { name: 'Classic Mojito', price: '$3.99' },
+      { name: 'Royal Martini', price: '$3.99' },
+      { name: 'Raspberry Mojito', price: '$4.50' },
+      { name: 'Retro Margarita', price: '$6.00' },
+      { name: 'Classic Margarita', price: '$7.50' },
+    ],
   };
 
   constructor() {
     super();
     this.config = this.defaultConfig;
     this.data = this.defaultData;
-    // Attach a shadow root
-    const shadow = this.attachShadow({ mode: "open" });
 
-    //Load External CSS File
-    const linkElement = document.createElement("link");
-    linkElement.setAttribute('rel', 'StyleSheet');
+    // Attach a shadow root
+    const shadow = this.attachShadow({ mode: 'open' });
+
+    // Load external CSS file
+    const linkElement = document.createElement('link');
+    linkElement.setAttribute('rel', 'stylesheet');
     linkElement.setAttribute('href', 'drink.css');
     shadow.appendChild(linkElement);
 
-    //Create container for the menu card
-    this.container = document.createElement('div');
-    shadow.appendChild(this.container);
+    // wrapper div created  for the menu card
+    this.wrapper = document.createElement('div');
+    shadow.appendChild(this.wrapper); 
   }
 
-
-
   static get observedAttributes() {
-    return ["config", "data"];
+    return ['config', 'data'];
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
     if (oldValue !== newValue) {
-      if (name === 'config' && newValue) {
-        try {
-          const customConfig = JSON.parse(newValue);
-          this.config = { ...this.defaultConfig, ...customConfig } //merge the default config with the custom config.
-        } catch (e) {
-          console.error('invalid config JSON:', e)
+      try {
+        if (name === 'config') {
+          this.config = { ...this.defaultConfig, ...JSON.parse(newValue) };
         }
+        if (name === 'data') {
+          this.data = { ...this.defaultData, ...JSON.parse(newValue) };
+        }
+      } catch (e) {
+        console.error(`Invalid JSON for ${name}:`, e);
       }
-      this.render()
+      this.render();
     }
   }
+
   connectedCallback() {
     this.render();
   }
-  render() {
-    this.container.innerHTML = ''; // clear previous content
 
-    //use the provided config and data, otherwise fallback to defaults
+  render() {
+    this.wrapper.innerHTML = ''; // Clear previous content
     const config = this.config || this.defaultConfig;
     const data = this.data || this.defaultData;
 
-    //apply the container class
-    this.container.classList.add(config.containerclass);
+    // Apply wrapper class
+    this.wrapper.classList.add(config.wrapperclass);  // class define in config
 
-    //background 
+    // Background
     const background = document.createElement('div');
     background.classList.add(config.backgroundClass);
-    this.container.appendChild(background);
+    this.wrapper.appendChild(background);
 
-    //border1
-    const border1 = document.createElement('div');
-    border1.classList.add('border1');
-    background.appendChild(border1);
 
-    //border2
-    const border2 = document.createElement('div');
-    border2.classList.add('border2');
-    background.appendChild(border2);
+    
+    // Images empty div
+    const imageContainer = document.createElement('div');
+    data.images.forEach((img) => {
+        const imgElement = document.createElement('img');
+        imgElement.src = img.src;
+        imgElement.alt = img.alt;
+        imgElement.classList.add(img.class);
+        imageContainer.appendChild(imgElement);
+    });
+    background.appendChild(imageContainer);
 
-    //header
+
+    // Created Menu Content div
+    const content = document.createElement('div');
+    content.classList.add(config.contentClass);
+    this.wrapper.appendChild(content);
+
+
+    // Header
     const header = document.createElement('div');
     header.classList.add(config.headerClass);
 
-    //add Title
-    const title = document.createElement('h1');
-    title.textContent = data.title || this.defaultData.title;
-    title.classList.add(config.titleClass);
-    header.appendChild(title);
-    //add subtitle
-    const subtitle = document.createElement('h2');
-    subtitle.textContent = data.subtitle || this.defaultData.subtitle; //fallback to default subtitle
-    subtitle.classList.add(config.subtitleClass);
-    header.appendChild(subtitle);
+    // Title and subtitle
+    const restorent = document.createElement('h1');
+    restorent.textContent = data.restorent;
+    restorent.classList.add(config.restorentClass);
+    header.appendChild(restorent);
 
-    //category 1 div
+    const discription = document.createElement('h2');
+    discription.textContent = data.discription;
+    discription.classList.add(config.discriptionClass);
+    header.appendChild(discription);
+
+    content.appendChild(header);
+
+    // Categories
     const cataName = document.createElement('div');
-    cataName.classList.add(config.cataName)
-    header.appendChild(cataName)
+    cataName.classList.add(config.cataName);
 
-    //add special category name
     const category = document.createElement('div');
     category.classList.add(config.categoryClass);
+    category.textContent = data.category;
     cataName.appendChild(category);
-    
-    
-    const specialsDiv = document.createElement('div');
-    specialsDiv.textContent = data.category ||this.defaultData.category;
-    specialsDiv.classList.add('specials'); // Adjust class name as needed
-    category.appendChild(specialsDiv);
 
-
-
-
-    //add cocktail category name
     const subcategory = document.createElement('div');
     subcategory.classList.add(config.subcategoryClass);
+    subcategory.textContent = data.subcategory;
     cataName.appendChild(subcategory);
 
-    const cocktailsDiv = document.createElement('div');
-    cocktailsDiv.textContent = data.subcategory ||this.defaultData.subcategory;
-    cocktailsDiv.classList.add('cocktails'); // Adjust class name as needed
-    subcategory.appendChild(cocktailsDiv);
+    header.appendChild(cataName);
 
+    // Special items
+    const specialContainer = document.createElement('div');
+    specialContainer.classList.add(config.specialitemClass);
+    data.specialitems.forEach((item) => {
+        const itemWrapper = document.createElement('div');
+        itemWrapper.classList.add('special-item-wrapper');
 
-    background.appendChild(header);
+        const itemName = document.createElement('div');
+        itemName.classList.add('special-item-name');
+        itemName.textContent = item.name;
 
+        const itemPrice = document.createElement('div');
+        itemPrice.classList.add('special-item-price');
+        itemPrice.textContent = item.price;
 
-    // Add items in special menu
-
-    const specialitemsContainer = document.createElement('div');
-    specialitemsContainer.classList.add(config.specialitemClass);
-    (data.specialitems || this.defaultData.specialitems).forEach(item => {
-      const specialItem = document.createElement('p');
-
-      // Create a span for item name
-      const nameSpan = document.createElement('div');
-      nameSpan.textContent = item.name;
-      nameSpan.classList.add('item-name1'); // Add class for further styling
-
-      // Create a span for item price
-      const priceSpan = document.createElement('div');
-      priceSpan.textContent = item.price;
-      priceSpan.classList.add('item-price1'); // Add class for further styling
-
-      // Append nameSpan and priceSpan to specialItem
-      specialItem.appendChild(nameSpan);
-      specialItem.appendChild(priceSpan);
-      specialitemsContainer.appendChild(specialItem);
+        itemWrapper.appendChild(itemName);
+        itemWrapper.appendChild(itemPrice);
+        specialContainer.appendChild(itemWrapper);
     });
-    category.appendChild(specialitemsContainer);
+    content.appendChild(specialContainer);
 
+    // Cocktail items
+    const cocktailContainer = document.createElement('div');
+    cocktailContainer.classList.add(config.cocktailitemsClass);
+    data.cocktailitems.forEach((item) => {
+        const itemWrapper = document.createElement('div');
+        itemWrapper.classList.add('cocktail-item-wrapper');
 
+        const itemName = document.createElement('div');
+        itemName.classList.add('cocktail-item-name');
+        itemName.textContent = item.name;
 
-    // Add items in cocktail menu
-    const cocktailitemsContainer = document.createElement('div');
-    cocktailitemsContainer.classList.add(config.cocktailitemsClass);
-    (data.cocktailitems || this.defaultData.cocktailitems).forEach(item => {
-      const cocktailItem = document.createElement('p');
-      // Create a span for item name
-      const nameSpan = document.createElement('div');
-      nameSpan.textContent = item.name;
-      nameSpan.classList.add('item-name2'); // Add class for further styling
+        const itemPrice = document.createElement('div');
+        itemPrice.classList.add('cocktail-item-price');
+        itemPrice.textContent = item.price;
 
-      // Create a span for item price
-      const priceSpan = document.createElement('div');
-      priceSpan.textContent = item.price;
-      priceSpan.classList.add('item-price2'); // Add class for further styling
-
-      // Append nameSpan and priceSpan to specialItem
-      cocktailItem.appendChild(nameSpan);
-      cocktailItem.appendChild(priceSpan);
-      cocktailitemsContainer.appendChild(cocktailItem);
+        itemWrapper.appendChild(itemName);
+        itemWrapper.appendChild(itemPrice);
+        cocktailContainer.appendChild(itemWrapper);
     });
-    subcategory.appendChild(cocktailitemsContainer);
-
-    //image container
-    const imageContainer = document.createElement('div');
-    imageContainer.classList.add('image-container');
-    (data.images || this.defaultData.images).forEach(imgData => {
-      const imgElement = document.createElement('img');
-      imgElement.src = imgData.src;
-      imgElement.alt = imgData.alt;
-      imgElement.classList.add(imgData.class);
-      imageContainer.appendChild(imgElement);
-    });
-    background.appendChild(imageContainer);
-  }
+    content.appendChild(cocktailContainer);
 }
 
-// Define the custom element
-customElements.define("menu-component", MenuComponent);
+}
+
+customElements.define('menu-component', MenuComponent);

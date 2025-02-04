@@ -1,4 +1,4 @@
-.menu-container {
+.menu-wrapper{
   border-color: solid black;
   border-radius: 5mm;
   background: linear-gradient(50deg, #ffe96e 0%, #ffe96e 45%, #f6e6a3 85%);
@@ -44,12 +44,31 @@
   font-weight: bold;
   text-align: center;
   color: black;
-  /* Navy blue text for subtitle */
   font-family: 'Arial', sans-serif;
   font-size: 15mm;
   position: relative;
   top: 2mm;
   left: 30mm;
+}
+.restorent-discription:before{
+  content:"";
+  width: 28mm;
+  height: 1.5mm;
+  margin-left: -32mm;
+  margin-top: 11mm;
+  background-color: black;
+  position: absolute;
+
+}
+.restorent-discription:after{
+  content:"";
+  width: 28mm;
+  height: 1.5mm;
+  margin-left: 2mm;
+  margin-top: 11mm;
+  background-color: black;
+  position: absolute;
+
 }
 
 
@@ -62,19 +81,48 @@
 
   text-align: center;
   color: #9c5716;
-  font-size: 15mm;
+  font-size: 20mm;
   position: relative;
-  left: 30mm;
-  bottom: 27mm;
+  left: 20mm;
+  bottom: 20mm;
+  font-style: italic;
 }
 
 .specials {
   font-family: 'Estonia', cursive;
   font-size: 25mm;
   font-weight: bold;
-  margin-top: 2mm;
+  margin-top: 1mm;
   margin-left: 70mm;
   text-align: start;
+  font-style: italic;
+}
+
+.special-item {
+  font-size: 5.5mm;
+  font-family: 'Cutive', sans-serif;
+  color: black;
+  text-align: justify;
+  padding-bottom: 2mm;
+  position: relative;
+  left: 115mm;
+  bottom:60mm;
+}
+.special-item-price{
+  font-size:5.5mm;
+  display: flex;
+  margin-bottom: 4mm;
+  margin-left: 90mm;
+  margin-top: -8mm;
+}
+
+.subcategory-name {
+  text-align: center;
+  font-size: 20mm;
+  color: #9c5716;
+  position: relative;
+  right: 67mm;
+  top: 60mm;
   font-style: italic;
 }
 
@@ -82,54 +130,44 @@
   font-family: 'Estonia', cursive;
   font-size: 25mm;
   font-weight: bold;
-  margin-top: 4mm;
+  margin-top: 1mm;
   margin-left: 60mm;
   text-align: start;
   font-style: italic;
 }
 
-.subcategory-name {
-  text-align: center;
-  font-size: 15mm;
-  color: #9c5716;
-  position: relative;
-  right: 50mm;
-  bottom: 30mm;
-}
-
-.special-item {
-  font-size: 5.2mm;
-  font-family: 'Cutive', sans-serif;
-  color: black;
-  text-align: justify;
-  padding-bottom: 2mm;
-  position: relative;
-  left: 70mm;
-}
-
 .cocktail-item {
-  font-size: 5.2mm;
+  font-size: 5.5mm;
   font-family: 'Cutive', sans-serif;
   color: black;
   position: relative;
-  left: 60mm;
+  left: 25mm;
+  bottom :15mm;
   text-align: justify;
-  margin-top: 1mm;
+
+}
+
+.cocktail-item-price{
+  font-size:5.5mm;
+  display: flex;
+  margin-bottom: 4mm;
+  margin-left: 80mm;
+  margin-top: -8mm;
 }
 
 .img1 {
-  height: 240mm;
-  width: 100mm;
+  height: 220mm;
+  width: 90mm;
   position: absolute;
   left: 0.1mm;
   top: 0.1mm;
 }
 
 .img2 {
-  height: 170mm;
-  width: 110mm;
+  height: 150mm;
+  width: 100mm;
   position: absolute;
-  left: 140mm;
+  left: 150mm;
   bottom: 0.5mm;
 }
 
@@ -145,83 +183,49 @@
   height: 40mm;
   width: 70mm;
   position: absolute;
-  bottom: -5mm;
+  bottom: 1mm;
   left: 0.1mm;
 }
 
 .img5 {
   position: absolute;
-  left: 70mm;
-  top: 120mm;
+  left: 60mm;
+  top: 60mm;
   height: 50mm;
 }
 
 .img6 {
   position: absolute;
-  left: 85mm;
-  top: 170mm;
+  left: 65mm;
+  top: 110mm;
   height: 50mm;
 }
 
 .img7 {
   position: absolute;
-  left: 5mm;
-  top: 200mm;
+  left: 65mm;
+  top: 160mm;
   height: 50mm;
 }
 
 .img8 {
   position: absolute;
-  left: 140mm;
+  left: 150mm;
   bottom: 90mm;
   height: 40mm;
 }
 
 .img9 {
   position: absolute;
-  left: 120mm;
+  left: 140mm;
   bottom: 45mm;
   height: 40mm;
 }
 
 .img10 {
   position: absolute;
-  left: 120mm;
+  left: 130mm;
   bottom: 2mm;
   height: 40mm;
 }
 
-.border1 {
-  position: absolute;
-  top: 97mm;
-  left: 112mm;
-  width: 20mm;
-  border-top: 1.5mm solid #060606;
-}
-
-.border2 {
-  position: relative;
-  top: 97mm;
-  left: 177mm;
-  width: 20mm;
-  border-top: 1.5mm solid #060606;
-}
-
-.item-name1 {
-  position: relative;
-
-}
-
-.item-price1 {
-  margin-top: -7mm;
-  margin-left: 100mm;
-}
-
-.item-name2 {
-  position: relative
-}
-
-.item-price2 {
-  margin-top: -7mm;
-  margin-left: 100mm;
-}
