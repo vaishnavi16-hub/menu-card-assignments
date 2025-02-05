@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Cutive&family=Estonia&family=Great+Vibes&family=Metal&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/drink.css">
+
+  <title>Menu Card</title>
+</head>
+<body>
+  <!-- Usage of menu-component -->
+  <menu-component
+    config='{
+      "wrapperClass": "menu-wrapper",
+      "backgroundClass":"menu-background",
+      "contentClass": "menu-content",
+      "headerClass": "menu-header",
+      "restaurantClass": "restaurant-name",
+      "discriptionClass": "restaurant-discription",
+      "cataName": "cataName",
+      "categoryClass": "category-name",
+      "subcategoryClass": "subcategory-name"
+    }'
+    data='{
+      "images": [
+        { "src": "IMG/glass1.png", "class": "img1", "alt": "img1" },
+        { "src": "IMG/glass2.png", "class": "img2", "alt": "img2" },
+        { "src": "IMG/leafcut1.png", "class": "img3", "alt": "img3" },
+        { "src": "IMG/leafcut2.png", "class": "img4", "alt": "img4" },
+        { "src": "IMG/sparkle.png", "class": "img5", "alt": "img5" },
+        { "src": "IMG/sparkle.png", "class": "img6", "alt": "img6" },
+        { "src": "IMG/sparkle.png", "class": "img7", "alt": "img7" },
+        { "src": "IMG/sparkle.png", "class": "img8", "alt": "img8" },
+        { "src": "IMG/sparkle.png", "class": "img9", "alt": "img9" },
+        { "src": "IMG/sparkle.png", "class": "img10", "alt": "img10" }
+      ],
+      "restaurant": "Drinks",
+      "discription": "Menu",
+      "category": "Specials",
+      "subcategory": "Cocktails",
+      "specialitems": [
+        { "name": "Special Orange Ice", "price": "$3.99" },
+        { "name": "Special Blue Cocktail", "price": "$3.99" },
+        { "name": "Special Kiwi Fruit Ice", "price": "$4.50" },
+        { "name": "Special Iced Lemon", "price": "$6.00" },
+        { "name": "Special Iced Tea", "price": "$7.50" }
+      ],
+      "cocktailitems": [
+        { "name": "Classic Mojito", "price": "$3.99" },
+        { "name": "Royal Martini", "price": "$3.99" },
+        { "name": "Raspberry Mojito", "price": "$4.50" },
+        { "name": "Retro Margarita", "price": "$6.00" },
+        { "name": "Classic Margarita", "price": "$7.50" }
+      ]
+    }'>
+  </menu-component>
+
+  <script src="DrinkJS.js"></script>
+</body>
+</html>
