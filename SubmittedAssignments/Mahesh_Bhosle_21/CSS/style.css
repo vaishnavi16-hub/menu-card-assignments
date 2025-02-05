@@ -1,0 +1,306 @@
+body {
+  background-color: white;
+  color: #f6f3f3;
+}
+
+.menu-list-group {
+  position: absolute;
+}
+
+.menu-list-group:nth-child(odd) {
+  width: 103mm;
+  height: auto;
+  border: #05050508 solid 1pt;
+  position: absolute;
+  right: 9mm;
+  top: 35mm;
+  line-height: 25pt;
+  color: black;
+}
+
+.menu-list-group:nth-child(even) {
+  width: 100mm;
+  height: auto;
+  border: #09040400 solid 1pt;
+  position: absolute;
+  left: 9mm;
+  bottom: 13mm;
+  line-height: 25pt;
+
+}
+
+body .menu-wrapper {
+  border: 6pt solid white;
+  border-radius: 50pt;
+  margin: auto;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgb(1, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+  background-blend-mode: multiply, multiply;
+  left: auto;
+  top: auto;
+  width: 250mm;
+  height: 350mm;
+  position: relative;
+}
+
+
+
+
+.box1 {
+  height: 351mm;
+  width: 123mm;
+  position: absolute;
+  right: 0pt;
+  top: 0pt;
+  background-color: rgb(255, 200, 27);
+}
+
+.box2 {
+  height: 351mm;
+  width: 122mm;
+  position: absolute;
+  left: 0pt;
+  top: 0pt;
+  background-color: rgb(47, 44, 47);
+}
+
+.box3{
+  position: absolute;
+  height: 26mm;
+  width: 67mm;
+  left: 90mm;
+  top: 1mm;
+  background-color: white;
+}
+
+.menu{   
+    position: absolute;
+    top: -182mm;
+    left: 90mm;
+    color: black;
+    font-size: 44pt;
+    font-weight: 700;
+  }
+
+
+
+.restorent-name {
+  color: #FFEB3B;
+  font-weight: bolder;
+  font-size: 47pt;
+  font-style: normal;
+  position: relative;
+  left: 73pt;
+  top: 17pt;
+}
+
+.restorent-discription {
+  color: #FFEB3B;
+  font-weight: bolder;
+  font-size: 27pt;
+  font-style: normal;
+  position: relative;
+  left: 74pt;
+  top: 5pt;
+}
+.borders {
+  position: relative;
+  top: 123pt;
+  left: 75pt;
+  width: 51pt;
+  border-top: 3pt solid #FFEB3B;}
+.restaurant-add-content {
+  width: 1000pt;
+    position: absolute;
+    top: -38pt;
+    left: -263pt;
+    color: white;
+}
+
+.restaurant-phone {
+  position: absolute;
+  top: 160pt;
+  left: 342pt;
+  font-size: 15pt;
+
+}
+
+.restaurant-web {
+  position: absolute;
+  top: 178pt;
+  left: 342pt;
+  font-size: 15pt;
+}
+
+.restaurant-email {
+  position: absolute;
+  top: 198pt;
+  left: 342pt;
+  font-size: 15pt;
+}
+
+.menu-list-heading {
+  padding-left: 16mm;
+  padding-bottom: 4mm;
+  font-weight: 900;
+  font-size: 49pt;
+  top: 171mm;
+  position: absolute;
+  font-family: auto;
+  color: #030202;
+}
+
+.menu-list-heading2 {
+  padding-left: 3mm;
+  padding-bottom: 4mm;
+  font-weight: 900;
+  font-size: 49pt;
+  top: -25mm;
+  left: 20mm;
+  position: absolute;
+  font-family: auto;
+  /* font-style: oblique; */
+  color: rgb(255, 200, 27);
+}
+
+
+
+
+.img1 {
+  transform: rotateZ(329deg);
+  position: absolute;
+  top: -125mm;
+  right: 3mm;
+  /* size: 65pt; */
+  height: 256pt;
+  border-radius: 50%;
+  border: 5.25pt solid red;
+  object-fit: cover;
+
+}
+
+.img-hover {
+  width: 257pt;
+  transition: transform 6s linear;
+}
+
+.img-hover:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.img2 {
+  transform: rotateY(45deg);
+  position: absolute;
+  top: 591pt;
+  right: 123pt;
+  /* size: 65pt; */
+  height: 35pt;
+}
+
+
+.img3 {
+  position: absolute;
+  bottom: -160mm;
+  left: 1mm;
+  /* height: 65pt; */
+  height: 269pt;
+  border-radius: 50%;
+  border: 2mm solid red;
+  object-fit: cover;
+}
+
+
+.img-hover1 {
+  width: 271pt;
+  transition: transform 6s linear;
+}
+
+.img-hover1:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.img4 {
+  height: 30pt;
+  position: absolute;
+  top: 179pt;
+  left: 54pt;
+}
+
+.img5 {
+  height: 30pt;
+  position: absolute;
+  top: 380pt;
+  left: 285pt;
+}
+
+
+.img6 {
+  transform: rotate(250deg);
+    height: 30pt;
+    position: absolute;
+    top: 369pt;
+    left: 258pt;
+}
+
+.img7 {
+  height: 153pt;
+  position: absolute;
+  bottom: 220pt;
+  right: -14mm;
+}
+
+.img8 {
+  height: 72pt;
+    position: absolute;
+    top: 144mm;
+    left: 87mm;
+}
+
+
+
+
+
+
+.menu-list1-price {
+  line-height: 39pt;
+  font-weight: 800;
+  display: grid;
+  font-size: 21pt;
+  position: absolute;
+  top: 294pt;
+  left: 266pt;
+}
+
+
+
+
+.menu-list-item {
+  line-height: 118%;
+  display: flex;
+  /* align-content: space-evenly; */
+  justify-content: space-between;
+  font-size: xx-large;
+  align-items: center;
+}

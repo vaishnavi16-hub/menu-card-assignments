@@ -1,0 +1,275 @@
+body {
+    background-color: #faf6f6;
+    color: #f6f3f3;
+}
+
+.menu-list-group {
+  position: absolute;
+}
+
+.menu-list-group:nth-child(odd) {
+  width: 103mm;
+    height: auto;
+    border: #05050508 solid 1pt;
+    position: absolute;
+    left: 20mm;
+    top: 83mm;
+}
+
+.menu-list-group:nth-child(even) {
+  width: 100mm;
+  height: auto;
+  border: #09040400 solid 1pt;
+  position: absolute;
+  right: 129mm;
+  bottom: 115mm;
+}
+
+body .menu-wrapper {
+    border: 1pt solid rgb(3, 3, 3);
+   margin: auto;
+   overflow: hidden;
+   background-blend-mode: multiply,multiply;
+   left: auto;
+   top: auto;
+   width: 250mm;
+   border-radius: 10mm;
+   height: 350mm;
+   position: relative;
+   background-color: rgb(249, 233, 223);
+ }
+ 
+ 
+
+ 
+.box1
+ {
+  border-radius: 30mm;
+  height: 185.913mm;
+  width: 35.277mm;
+  position: absolute;
+  left: 42.686mm;
+  transform: rotate(90deg);
+  top: -32.808mm;
+  background-color: rgb(249, 188, 186);
+ }
+
+
+ .restorent-name
+ {
+  color: white;
+  font-weight: bolder;
+  font-size: 40pt;
+  font-style: normal;
+  position: relative;
+  left: 20.461mm;
+  top: 49.741mm;
+    
+ }
+ 
+ .restorent-discription
+ {
+  color: white;
+    font-weight: bolder;
+    font-size: 40pt;
+    font-style: normal;
+    position: relative;
+    left: 51.858mm;
+    top:28.927mm;
+    
+ }
+ 
+ .restaurant-add-content
+ {
+  width: 352.777mm;
+    position: absolute;
+    top: -47.272mm;
+    left: -118.180mm;
+    color: #161615;
+ }
+ 
+ .restaurant-phone
+ {
+  position: absolute;
+  top: 990pt;
+  left: 722pt;
+  font-size: 20pt;
+  color: rgb(163 68 9);
+ }
+ 
+ .restaurant-web
+ {
+  position: absolute;
+  top: 359.833mm;
+  left: 254.705mm;
+  font-size: 20pt;
+  color: rgb(163 68 9);
+ }
+ 
+ .restaurant-email
+ {
+  position: absolute;
+    top: 371.122mm;
+    left: 254.705mm;
+    font-size: 20pt;
+    color: rgb(163 68 9);
+ }
+
+ .menu-list-heading
+ {
+  padding-left: 0mm;
+    padding-bottom: 5mm;
+    font-weight: 900;
+    font-size: 29pt;
+    font-family: auto;
+    color: rgb(208, 130, 82);
+    background-color: rgb(249, 233, 223);
+    width: 50mm;
+ }
+
+ 
+ 
+ 
+ .img1
+ {
+  transform: rotateZ(360deg);
+  position: absolute;
+  top: -3.527mm;
+  right: -225.072mm;
+
+  height: 218.722mm;
+
+  object-fit: cover;
+       
+       
+ }
+
+ .img-hover {
+  width: 90.663mm;
+  transition: transform 6s linear;
+}
+
+.img-hover:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ .img2
+ {
+   transform: rotateY(45deg);
+    position: absolute;
+    top: 208.491mm;
+    right: 43.391mm;
+    height: 12.347mm;
+ }
+
+
+ .img3
+ {
+  position: absolute;
+  top: 78.316mm;
+  right: 2.822mm;
+  height: 111.125mm;
+  width: 117mm;
+  object-fit: cover;
+    border-top-right-radius: 20mm;
+
+ }
+
+ .img-hover1 {
+  width: 95.602mm;
+  transition: transform 6s linear;
+}
+
+.img-hover1:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ 
+
+ .img4
+ {
+   height: 10.583mm;
+    position: absolute;
+    top: 50.094mm;
+    right: 58.913mm;
+ }
+
+ .img5
+ {
+   height: 10.583mm;
+    position: absolute;
+    top: 158.044mm;
+    right: 34.925mm;
+ }
+
+ .img6
+ {
+  height: 37.041mm;
+    position: absolute;
+    top: 31.75mm;
+    right: 105.127mm;
+    filter: drop-shadow(0px 19px 10px rgba(0, 0, 0, 0.5))
+   
+ }
+
+ .img7
+ {
+   height: 79.375mm;
+    position: absolute;
+    top: -0.352mm;
+    right: 0mm;
+ }
+
+ .img8
+ {
+   height: 25.4mm;
+    position: absolute;
+    top: 42.333mm;
+    right: 73.730mm;
+ }
+
+ 
+
+
+
+
+ .menu-list1-price
+ {
+   line-height: 13.758mm;
+   font-weight: 800;
+    display: grid;
+    font-size: 21pt;
+    position: absolute;
+    top: 103.716mm;
+    left: 93.838mm;
+ }
+
+ 
+
+
+ .menu-list-item {
+  line-height: 118%;
+    display: flex;
+
+    justify-content: space-between;
+    font-size: xx-large;
+    align-items: center;
+    color:  rgb(195 136 99);
+ }

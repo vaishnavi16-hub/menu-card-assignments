@@ -1,0 +1,323 @@
+body {
+  background-color: #0a0a0a;
+  color: #f6f3f3;
+}
+
+.menu-list-group {
+position: absolute;
+}
+
+.menu-list-group:nth-child(odd) {
+width: 100mm;
+  height: auto;
+  border: #05050508 solid 1pt;
+  position: absolute;
+  left: 16mm;
+  color: black;
+font-family:Copperplate Gothic Light;
+  top: 104mm;
+}
+
+.menu-list-group:nth-child(even) {
+ width: 100mm;
+  height: auto;
+  border: #09040400 solid 1pt;
+  position: absolute;
+  right: 21mm;
+  color: black;
+font-family:Copperplate Gothic Light;
+  bottom: 71mm;
+}
+
+body .menu-wrapper {
+border: 28pt solid white;
+  margin: auto;
+  overflow: hidden;
+  background-color:#31373c;
+  left: auto;
+  top: auto;
+  width: 250mm;
+  height: 350mm;
+  position: relative;
+}
+
+
+
+
+.box1
+{
+  height: 111pt;
+  width: 574pt;
+  position: absolute;
+  left: -84pt;
+  top: 294pt;
+  transform: skewX(51deg);
+  background-color: #c8cacb;
+}
+
+.box2
+{
+ width: 236.27mm;
+  height: 337.60mm;
+  border: 11.25pt solid #fff;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 3;
+  border-radius: 26.25pt;
+  left: -3mm;
+  top: -4mm;
+}
+
+.box3
+{
+      height: 117pt;
+  width: 563pt;
+  position: absolute;
+  left: -72pt;
+  bottom: 416pt;
+  transform: skewX(-49deg);
+  background-color: #c8cacb;
+}
+
+
+
+.box4
+{
+height: 123pt;
+  width: 537pt;
+  position: absolute;
+  right: -64pt;
+  bottom: 293pt;
+  transform: skewX(-47deg);
+  background-color: #c8cacb
+}
+
+
+.box5
+{
+ height: 113pt;
+  width: 544pt;
+  position: absolute;
+  left: 168pt;
+  top: 644pt;
+  transform: skewX(44deg);
+  background-color: #c8cacb;
+}
+
+.borders
+{
+ position: relative;
+  top: 123pt;
+  left: 75pt;
+  width: 51pt;
+  border-top: 3pt solid #FFEB3B;
+}
+
+.restorent-name
+{
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 47pt;
+  font-style: normal;
+  position: relative;
+  left: 73pt;
+  top: 165pt;
+}
+
+.restorent-discription
+{
+   color: #ffffff;
+  font-weight: bolder;
+  font-size: 27pt;
+  font-style: normal;
+  position: relative;
+  left: 74pt;
+  top: 154pt;
+}
+
+.restaurant-add-content
+{
+    width: 1000pt;
+  position: absolute;
+  top: 662pt;
+  left: 21pt;
+
+}
+
+.restaurant-phone
+{
+position: absolute;
+top: 147pt;
+left: 342pt;
+font-size: 20pt;
+}
+
+.restaurant-web
+{
+position: absolute;
+top: 178pt;
+left: 342pt;
+font-size: 20pt;
+}
+
+.restaurant-email
+{
+position: absolute;
+  top: 210pt;
+  left: 342pt;
+  font-size: 20pt;
+}
+
+.menu-list-heading
+{
+padding-left: 3mm;
+  padding-bottom: 4mm;
+  font-weight: 900;
+  font-size: 29pt;
+  font-family: auto;
+  /* font-style: oblique; */
+  color: #030202;
+}
+
+
+
+
+.img1
+{
+transform: rotateZ(329deg); 
+position: absolute;
+top: -46pt;
+right: -285pt;
+height: 256pt;
+border-radius: 50%;
+border: 5.25 solid red;
+object-fit: cover;
+     
+     
+}
+
+.img-hover {
+width: 257pt;
+transition: transform 6s linear;
+}
+
+.img-hover:hover {
+animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+.img2
+{
+ transform: rotateY(45deg);
+  position: absolute;
+  top: 591pt;
+  right: 123pt;
+  /* size: 65pt; */
+  height: 35pt;
+}
+
+
+.img3
+{
+position: absolute;
+  top: 55pt;
+  right: 352pt;
+  /* size: 65pt; */
+  height: 269pt;
+  border-radius: 50%;
+  border: 2mm solid red;
+  object-fit: cover;
+
+}
+
+.img-hover1 {
+width: 271pt;
+transition: transform 6s linear;
+}
+
+.img-hover1:hover {
+animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+
+
+
+.img4
+{
+  height: 365pt;
+  position: absolute;
+  top: -28pt;
+  right: -415pt;
+}
+
+.img5
+{
+  height: 173pt;
+  position: absolute;
+  top: -8pt;
+  right: 384pt;
+}
+
+.img6
+{
+  transform: rotate(360deg);
+  height: 391pt;
+  position: absolute;
+  top: 546pt;
+  right: 375pt;
+}
+
+.img7
+{
+ height: 153pt;
+  position: absolute;
+  top: 36pt;
+  right: 43pt;
+}
+
+.img8
+{
+ height: 72pt;
+  position: absolute;
+  top: 120pt;
+  right: 209pt;
+}
+
+
+.menu-list1-price
+{
+ line-height: 39pt;
+ font-weight: 800;
+  display: grid;
+  font-size: 21pt;
+  position: absolute;
+  top: 294pt;
+  left: 266pt;
+}
+
+
+
+
+.menu-list-item {
+line-height: 118%;
+  display: flex;
+  /* align-content: space-evenly; */
+  justify-content: space-between;
+  font-size: xx-large;
+  align-items: center;
+}

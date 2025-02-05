@@ -1,0 +1,365 @@
+body {
+    background-color: #0a0a0a;
+    color: #110505;
+}
+
+.menu-list-group {
+  position: absolute;
+}
+
+.menu-list-group:nth-child(odd) {
+      width: 104mm;
+    height: 50mm;
+    border: #05050508 solid 1pt;
+    position: absolute;
+    left: 54mm;
+    font-size: 7pt;
+    top: 102mm;
+    font-family: serif;
+}
+
+.menu-list-group:nth-child(even) {
+  width: 111mm;
+  height: 50mm;
+  border: #09040400 solid 1pt;
+  position: absolute;
+font-size: 7pt;
+  right: 82mm;
+  bottom: 78mm;
+font-family: serif;
+}
+
+body .menu-wrapper {
+    border: 6pt solid white;
+    margin: auto;
+    overflow: hidden;
+    background: white;
+    background-blend-mode: multiply,multiply;
+    left: auto;
+    top: 30mm;
+    width: 250mm;
+    height: 350mm;
+    position: relative;
+ }
+ 
+ 
+.radius1{
+  position: absolute;
+  margin: 9mm;
+  border: 2.25pt solid #a39c91;
+  padding: 78mm;
+  border-radius: 6mm;
+  padding-right: 140mm;
+  padding-bottom: 255mm;
+  padding-left: 89mm;
+  padding-top: 78mm;
+  background-color: #fffdf5;
+  top: -2mm;
+  left: -1mm;
+  height: -25mm;
+  width: -100mm;
+}
+.box4
+{
+  height: 44pt;
+    width: 139pt;
+    position: absolute;
+    right: 167pt;
+    bottom: 325pt;
+    background-color: rgb(254, 254, 251);
+}
+ 
+ 
+.box5
+{
+  height: 45pt;
+    width: 105pt;
+    position: absolute;
+    left: 58pt;
+    top: 242pt;
+    background-color: rgb(254, 254, 253);
+}
+ 
+ .borders
+ {
+  position: relative;
+  top: 58mm;
+  left: 97mm;
+  width: 51pt;
+  z-index: 4;
+  border-top: 3pt solid #FFEB3B;
+ }
+
+ .restorent-name
+ {
+  color: #FFEB3B;
+  font-weight: bolder;
+  font-size: 44pt;
+  font-style: normal;
+  position: relative;
+  left: 89mm;
+  top: 22mm;
+  z-index: 5;
+ }
+ 
+ .restorent-discription
+ {
+  color: #f0efe8;
+  font-weight: bolder;
+  font-size: 33pt;
+  font-style: normal;
+  position: relative;
+  left: 96mm;
+  top: 18mm;
+  z-index: 7;
+ }
+ 
+ .restaurant-add-content
+ {
+  width: 1000pt;
+    position: absolute;
+    top: -15pt;
+    left: -269pt;
+ }
+ 
+ .restaurant-phone
+ {
+  position: absolute;
+  top: 210pt;
+  left: 504pt;
+  font-size: 18pt;
+ }
+ 
+ .restaurant-web
+ {
+  position: absolute;
+  top: 230pt;
+  left: 485pt;
+  font-size: 20pt;
+ }
+ 
+ .restaurant-email
+ {
+  position: absolute;
+  top: 254pt;
+  left: 470pt;
+  font-size: 20pt;
+ }
+
+ .menu-list-heading
+ {
+    padding-left: 49mm;
+    padding-bottom: 4mm;
+    font-weight: 900;
+    font-size: 29pt;
+    font-family: auto;
+    /* font-style: oblique; */
+    color: #030202;
+ }
+
+ 
+ 
+ 
+ .img1
+ {
+  transform: rotateZ(329deg); 
+  position: absolute;
+  top: -46pt;
+  right: -285pt;
+  /* size: 65pt; */
+  height: 256pt;
+  border-radius: 50%;
+  border: 5.25pt solid red;
+  object-fit: cover;
+       
+       
+ }
+
+ .img-hover {
+  width: 257pt;
+  transition: transform 6s linear;
+}
+
+.img-hover:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ .img2
+ {
+   transform: rotateY(45deg);
+    position: absolute;
+    top: 591pt;
+    right: 123pt;
+    /* size: 65pt; */
+    height: 35pt;
+ }
+
+
+ .img3
+ {
+  position: absolute;
+    top: 55pt;
+    right: 352pt;
+    /* size: 65pt; */
+    height: 269pt;
+    border-radius: 50%;
+    border: 2mm solid red;
+    object-fit: cover;
+
+ }
+
+ .img-hover1 {
+  width: 271pt;
+  transition: transform 6s linear;
+}
+
+.img-hover1:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ 
+
+ .img4
+ {
+  height: 72mm;
+  width: 49mm;
+  position: absolute;
+  top: 216pt;
+  right: 188mm;
+  overflow: hidden;
+ }
+
+ .img5
+ {
+  height: 85mm;
+  width: 56mm;
+  position: absolute;
+  top: 161mm;
+  right: 181mm;
+ }
+
+ .img6
+ {
+  transform: rotate(360deg);
+  height: 80mm;
+  position: absolute;
+  top: 260mm;
+  right: 180mm;
+ }
+
+ .img7
+ {
+  height: 74mm;
+  position: absolute;
+  top: 78mm;
+  right: 16mm;
+ }
+
+ .img8 {
+  height: 87mm;
+  position: absolute;
+  top: 166mm;
+  right: 16mm;
+}
+.img9 {
+      height: 73mm;
+    position: absolute;
+    top: 266mm;
+    right: 16mm;
+}
+ .menu-list1-price
+ {
+   line-height: 39pt;
+   font-weight: 800;
+    display: grid;
+    font-size: 21pt;
+    position: absolute;
+    top: 294pt;
+    left: 266pt;
+ }
+ .menu-list-item {
+  line-height: 96%;
+  display: flex;
+  left: 3mm;
+  /* align-content: space-evenly; */
+  justify-content: space-between;
+  font-size: 22pt;
+  align-items: center;
+  padding-left: 26mm;
+ }
+ /*.menu-list1{
+    line-height: 118%;
+    display: flex;
+    left: 3mm;
+    /* align-content: space-evenly; 
+    justify-content: space-between;
+    font-size: 22pt;
+    align-items: center;
+    padding-left: 26mm;
+ }
+ .menu-list-item1 {
+    line-height: 118%;
+    display: flex;
+    left: 3mm;
+    /* align-content: space-evenly; 
+    justify-content: space-between;
+    font-size: 22pt;
+    align-items: center;
+    padding-left: 26mm;
+ }
+ .menu-list-heading {
+  position: relative;
+  padding-bottom: 103mm;
+  padding-left: -38mm;
+  font-weight: bold;
+  font-size: 30pt;
+  font-family: auto;
+  /* font-style: oblique; 
+  color: #030202;
+  left: -37mm;
+}*/
+.box1 {
+  height: 114pt;
+  width: 246pt;
+  position: absolute;
+  left: 73mm;
+  bottom: 282mm;
+  background-color: #030303;
+  z-index: 4;
+}.box2{
+  height: 90pt;
+  width: 300pt;
+  position: absolute;
+  left: 63mm;
+  bottom: 285mm;
+  background-color: #030303;
+  z-index: 2;
+  border-radius: 16mm;
+}
+.box3 {
+  height: 49mm;
+  width: 76mm;
+  position: absolute;
+  left: 79mm;
+  top: 19mm;
+  /* bottom: 99mm; */
+  background-color: #030303;
+  z-index: 4;
+}

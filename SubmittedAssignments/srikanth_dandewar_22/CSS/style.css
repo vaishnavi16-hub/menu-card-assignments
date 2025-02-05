@@ -1,0 +1,340 @@
+body {
+    background-color: #0a0a0a;
+    color: #f6f3f3;
+}
+
+.menu-list-group {
+  position: absolute;
+}
+
+.menu-list-group:nth-child(odd) {
+  width: 94mm;
+  height: auto;
+  border: #05050508 solid 1pt;
+  position: absolute;
+  right: 13mm;
+  top: 53mm;
+}
+
+.menu-list-group:nth-child(even) {
+  width: 96mm;
+  height: auto;
+  border: #09040400 solid 1pt;
+  position: absolute;
+  right: 13mm;
+  bottom: 18mm;
+}
+
+body .menu-wrapper {
+    border: 6pt solid white;
+   margin: auto;
+   overflow: hidden;
+    background: linear-gradient(to bottom, rgb(1, 0, 0) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+   background-blend-mode: multiply,multiply;
+   left: auto;
+   top: auto;
+   width: 250mm;
+   height: 350mm;
+   position: relative;
+   border-radius: 28.34pt;
+   /* display: flex; */
+   /* justify-content: ; */
+ }
+ .menu-background-left{
+  position: absolute;
+  height: 346.58mm;
+  background-color: #e8e0da;
+  /* border: 7mm solid red; */
+  width: 132.29mm;
+ }
+ 
+ .menu-background-right{
+  position: absolute;
+  height: 346.58mm;
+  background-color: #581e2f;
+  /* border: 7mm solid red; */
+  width: 134.93mm;
+  right: 0mm;
+ }
+
+
+ 
+/* .box1
+ {
+  height: 177pt;
+  width: 50pt;
+  position: absolute;
+  left: 0pt;
+  top: 41pt;
+  background-color: #FFEB3B;
+ } */
+
+/* .box2
+ {
+   height: 149pt;
+    width: 192pt;
+    position: absolute;
+    left: 0pt;
+    top: 249pt;
+    background-color: #FFEB3B;
+} */
+
+/* .box3
+ {
+   height: 149pt;
+    width: 192pt;
+    position: absolute;
+    left: 0pt;
+    bottom: 88pt;
+    background-color: #FFEB3B;
+} */
+
+
+ 
+.box4
+{
+  height: 15.52mm;
+    width: 49.03mm;
+    position: absolute;
+    right: 34.57mm;
+    bottom: 140.40mm;
+    background-color: rgb(254, 254, 251);
+}
+ 
+ 
+.box5
+{
+  height:  15.52mm;
+  width: 49.03mm;
+  position: absolute;
+  right: 41.09mm;
+  top: 52.56mm;
+  background-color: rgb(254, 254, 253);
+}
+ 
+ .borders
+ {
+   position: relative;
+   top:38.69mm;
+   left: 41.98mm;
+   width: 38.80mm;
+   border-top: 1pt solid #AA616199;
+ }
+
+ .restorent-name
+ {
+  color: #64101099;
+  font-weight: bolder;
+  font-size: 47pt;
+  font-style: normal;
+  position: relative;
+  left: 30.33mm;
+  top: 3.52mm;
+ }
+ 
+ .restorent-discription
+ {
+  color: #62060699;
+    font-weight: bolder;
+    font-size: 27pt;
+    font-style: normal;
+    position: relative;
+    left: 42.33mm;
+    top: 0mm;
+   }
+ 
+ .restaurant-add-content
+ {
+  width: 352.77mm;
+  position: absolute;
+  top: -48.68mm;
+  left: 33.86mm;
+  }
+ 
+ .restaurant-phone
+ {
+  position: absolute;
+  top: 52.91mm;
+  left: 120.65mm;
+  font-size: 20pt;
+ }
+ 
+ .restaurant-web
+ {
+  position: absolute;
+  top: 61.73mm;
+  left: 120.65mm;
+  font-size: 20pt;
+ }
+ 
+ .restaurant-email
+ {
+  position: absolute;
+    top: 70.55mm;
+    left: 120.65mm;
+    font-size: 20pt;
+ }
+
+ .menu-list-heading
+ {
+  padding-left: 26mm;
+  padding-bottom: 6mm;
+  font-weight: 900;
+  font-size: 29pt;
+  font-family: auto;
+  /* font-style: oblique; */
+  color: #171616;
+ 
+
+ }
+
+ 
+ 
+ 
+ .img1
+ {
+  transform: rotateZ(329deg); 
+  position: absolute;
+  top: 26.10mm;
+  left: -121mm;
+  size: 22.93mm;
+  height: 90.31mm;
+  border-radius: 132.29mm;
+  border: 5.25pt solid red;
+  object-fit: cover;
+       
+       
+ }
+
+ .img-hover {
+  width: 90.66mm;
+  transition: transform 6s linear;
+}
+
+.img-hover:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ .img2
+ {
+   transform: rotateY(45deg);
+    position: absolute;
+    top: 208.49mm;
+    right: 43.39mm;
+    /* size: 65pt; */
+    height: 12.34mm;
+ }
+
+
+ .img3
+ {
+  position: absolute;
+    top: 31.75mm;
+    right: 124.17mm;
+    /* size: 65pt; */
+    height: 94.89mm;
+    border-radius: 374.99pt;
+    border: 1.66mm solid red;
+    object-fit: cover;
+
+ }
+
+ .img-hover1 {
+  width: 95.60mm;
+  transition: transform 6s linear;
+}
+
+.img-hover1:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ 
+
+ .img4
+ {
+   height: 10.58mm;
+    position: absolute;
+    top: 65.61mm;
+    left: 64.91mm;
+ }
+
+ .img5
+ {
+   height: 10.58mm;
+    position: absolute;
+    top: 172.86mm;
+    left: 71.61mm;
+ }
+
+ .img6
+ {
+   transform: rotate(250deg);
+    height: 10.58mm;
+    position: absolute;
+    top: 172.86mm;
+    left: 61.38mm;
+ }
+
+ .img7
+ {
+   height: 53.97mm;
+    position: absolute;
+    top: 39.15mm;
+    left: 9.87mm; 
+ }
+
+ .img8
+ {
+   height: 25.4mm;
+    position: absolute;
+    top: 69.85mm;
+    left: 90.95mm;
+ }
+
+ 
+
+
+
+
+ .menu-list1-price
+ {
+   line-height: 13.75mm;
+   font-weight: 800;
+    display: grid;
+    font-size: 21pt;
+    position: absolute;
+    top: 103.71mm;
+    left: 93.83mm;
+ }
+ .menu-list{
+  padding: 7mm 0mm 7mm 0mm;
+ }
+ 
+
+
+ .menu-list-item {
+  line-height: 9mm;
+    display: flex;
+    /* align-content: space-evenly; */
+    justify-content: space-between;
+    font-size: 20pt;
+    align-items: center;
+ }
+

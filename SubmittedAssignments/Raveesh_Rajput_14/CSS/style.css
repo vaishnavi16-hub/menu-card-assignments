@@ -1,0 +1,186 @@
+@font-face {
+  font-family: title;
+  src: url("/Font/FingerPaint-Regular.ttf");
+}
+
+@font-face {
+  font-family: content;
+  src: url("/Font/ProtestRiot-Regular.ttf");
+}
+
+body {
+  color: #f6f3f3;
+  font-family: "content";
+
+}
+
+.menu-list-group {
+  position: absolute;
+}
+
+.menu-list-group:nth-child(odd) {
+  width: 103mm;
+  height: auto;
+  border: #05050508 solid 1pt;
+  position: absolute;
+  left: 140mm;
+  top: 130mm;
+}
+
+.menu-list-group:nth-child(even) {
+  width: 100mm;
+  height: auto;
+  border: #09040400 solid 1pt;
+  position: absolute;
+  right: 10mm;
+  bottom: 0mm;
+}
+
+body .menu-wrapper {
+  left: 100mm;
+  top: 30mm;
+  width: 250mm;
+  height: 350mm;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20pt;
+}
+
+.menu-background {
+  margin: auto;
+  overflow: hidden;
+  left: 0mm;
+  top: 0mm;
+  width: 250mm;
+  height: 350mm;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 20pt;
+}
+
+.box1 img {
+  margin: auto;
+  overflow: hidden;
+  left: 0mm;
+  top: 0mm;
+  width: 250mm;
+  height: 350mm;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 20pt;
+}
+
+.borders {
+  position: relative;
+  top: 40.4mm;
+  left: 26.4mm;
+  width: 25mm;
+  border-top: 3pt solid #FFEB3B;
+}
+
+.restorent-name {
+  color: #FFD630;
+  font-weight: bolder;
+  font-size: 47pt;
+  font-style: normal;
+  position: relative;
+  left: 0mm;
+  top: 6mm;
+  text-align: center;
+  font-family: title;
+}
+
+.restorent-discription {
+  color: #FFD630;
+  font-weight: bolder;
+  font-size: 27pt;
+  font-style: normal;
+  position: relative;
+  left: 25mm;
+  top: 1.7mm;
+}
+
+.restaurant-add-content {
+  width: 353.7mm;
+  position: absolute;
+  top: -5.3mm;
+  left: -95mm;
+}
+
+.restaurant-phone {
+  position: absolute;
+  top: 51.8mm;
+  left: 120.6mm;
+  font-size: 20pt;
+}
+
+.restaurant-web {
+  position: absolute;
+  top: 62.7mm;
+  left: 120.65mm;
+  font-size: 20pt;
+}
+
+.restaurant-email {
+  position: absolute;
+  top: 74mm;
+  left: 120.65mm;
+  font-size: 20pt;
+}
+
+.menu-list-heading {
+  font-weight: 900;
+  font-size: 29pt;
+  font-family: "content";
+  color: black;
+  width: 100mm;
+  text-align: center;
+  background-color: #FFD630;
+  position: absolute;
+  top: -30mm;
+  left: -10mm;
+  font-style: italic;
+}
+
+.img1 {
+  position: absolute;
+  top: -135mm;
+  right: -13mm;
+  width: 80mm;
+  height: 110mm;
+  border-top-right-radius: 45pt;
+
+}
+
+.img3 {
+  position: absolute;
+  left: -141mm;
+  bottom: -10mm;
+  width: 120mm;
+  height: 260mm;
+  border-bottom-left-radius: 20pt;
+}
+
+.menu-list {
+  position: relative;
+  right: 10mm;
+  bottom: 10mm;
+}
+
+.menu-list1-price {
+  line-height: 13.75mm;
+  font-weight: 800;
+  display: grid;
+  font-size: 21pt;
+  position: absolute;
+  top: 103.7mm;
+  left: 93.8mm;
+}
+
+.menu-list-item {
+  line-height: 7mm;
+  display: flex;
+  justify-content: space-between;
+  font-size: xx-large;
+  align-items: center;
+}

@@ -1,0 +1,318 @@
+@font-face {
+  font-family: sub;
+  src: url(../Font/Generis\ Serif\ W04\ Medium.ttf);
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #f6f3f3;
+    
+}
+
+.menu-list-group {
+  position: absolute;
+  font-family: sub;
+}
+
+.menu-list-group:nth-child(odd) {
+    width: 103mm;
+    height: auto;
+    border: #05050508 solid 1pt;
+    position: absolute;
+    left: 20mm;
+    top: 70mm;
+    font-family: sub;
+}
+
+.menu-list-group:nth-child(even) {
+  width: 100mm;
+  height: auto;
+  border: #09040400 solid 1pt;
+  position: absolute;
+  right: 9mm;
+  bottom: 20mm;
+  font-family: sub;
+}
+
+body .menu-wrapper {
+    border: 6pt solid white;
+   margin: auto;
+   overflow: hidden;
+    background: linear-gradient(to bottom, rgb(1, 0, 0) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+   background-blend-mode: multiply,multiply;
+   left: auto;
+   top: auto;
+   width: 250mm;
+   height: 350mm;
+   position: relative;
+ }
+ 
+ 
+
+ 
+.box1
+ {
+  height: 62.44mm;
+  width: 17.63mm;
+  position: absolute;
+  left: 0mm;
+  top: 14.46mm;
+  background-color: #FFEB3B;
+ }
+
+.box2
+ {
+   height: 52.56mm;
+    width: 67.73mm;
+    position: absolute;
+    left: 180.9mm;
+    top: 87.84mm;
+    background-color: #FFEB3B;
+}
+
+.box3
+ {
+   height: 52.56mm;
+    width: 67.73mm;
+    position: absolute;
+    left: 0mm;
+    bottom: 31.04mm;
+    background-color: #FFEB3B;
+}
+
+
+ 
+.box4
+{
+  height: 15.52mm;
+    width: 49.03mm;
+    position: absolute;
+    right: 58.91mm;
+    bottom: 114.65mm;
+    background-color: rgb(254, 254, 251);
+}
+ 
+ 
+.box5
+{
+  height: 15.8mm;
+    width: 37.041mm;
+    position: absolute;
+    left: 20.46mm;
+    top: 85.37mm;
+    background-color: rgb(254, 254, 253);
+}
+ 
+ .borders
+ {
+   position: relative;
+    top: 43.39mm;
+    left: 26.45mm;
+    width: 17.99mm;
+    border-top: 3pt solid #FFEB3B;
+ }
+
+ .restorent-name
+ {
+  color: #ffffff;
+  /* font-weight: bolder; */
+  font-size: 47pt;
+  font-style: normal;
+  position: relative;
+  left: 19.75mm;
+  top: 35.27mm;
+  font-family: sub;
+ }
+ 
+ .restorent-discription
+ {
+   color: #ffffff;
+    /* font-weight: bolder; */
+    font-size: 27pt;
+    font-style: normal;
+    position: relative;
+    left: 19.75mm;
+    top: 27.86mm;
+    font-family: sub;
+ }
+ 
+ .restaurant-add-content
+ {
+  width: 352.7mm;
+  position: absolute;
+  bottom: 99.83mm;
+  left: -98.77mm;
+ }
+ 
+ .restaurant-phone
+ {
+  position: absolute;
+  top: 51.85mm;
+  left: 120.65mm;
+  font-size: 15pt;
+  font-family: sub;
+ }
+ 
+ .restaurant-web
+ {
+  position: absolute;
+  top: 62.79mm;
+  left: 120.65mm;
+  font-size: 15pt;
+  font-family: sub;
+ }
+ 
+ .restaurant-email
+ {
+  position: absolute;
+    top: 74.08mm;
+    left: 120.65mm;
+    font-size: 15pt;
+    font-family: sub;
+ }
+
+ .menu-list-heading
+ {
+  padding-left: 0mm;
+    padding-top: 7mm;
+    padding-bottom: 2mm;
+    font-size: 29pt;
+    font-family:sub;
+    /* font-style: oblique; */
+    color: #ffffff;
+
+ }
+
+ .img1
+ {
+  position: absolute;
+  top: -91.72mm;
+  right: -149.93mm;
+  width: 141.1mm;
+  height: 141.1mm;
+  transform: rotateZ(45deg);
+  object-fit: cover;
+ }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ .img2
+ {
+   transform: rotateY(45deg);
+    position: absolute;
+    top: 208.4mm;
+    right: 43.39mm;
+    /* size: 65pt; */
+    height: 12.34mm;
+ }
+
+
+ .img3
+ {
+  position: absolute;
+  top: 1.05mm;
+  right: 93.83mm;
+  /* size: 65pt; */
+  height: 119.2mm;
+  /* border-radius: 50%; */
+  /* border: 2mm solid red; */
+  object-fit: cover;
+  transform: rotateY(45deg);
+  width: 201.4mm;
+ }
+
+ .img-hover1 {
+  width: 95.6mm;
+  transition: transform 6s linear;
+}
+
+.img-hover1:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ 
+
+ .img4
+ {
+   height: 10.58mm;
+    position: absolute;
+    top: 50.09mm;
+    right: 58.91mm;
+ }
+
+ .img5
+ {
+   height: 10.58mm;
+    position: absolute;
+    top: 158.04mm;
+    right: 34.9mm;
+ }
+
+ .img6
+ {
+   transform: rotate(250deg);
+    height: 10.58mm;
+    position: absolute;
+    top: 159.80mm;
+    right: 45.15mm;
+ }
+
+ .img7
+ {
+   height: 53.9mm;
+    position: absolute;
+    top: 12.7mm;
+    right: 15.16mm;
+ }
+
+ .img8
+ {
+   height: 25.4mm;
+    position: absolute;
+    top: 42.33mm;
+    right: 73.73mm;
+ }
+
+ 
+
+
+
+
+ .menu-list1-price
+ {
+   line-height: 13.75mm;
+   font-weight: 800;
+    display: grid;
+    font-size: 21pt;
+    position: absolute;
+    top: 103.7mm;
+    left: 93.83mm;
+ }
+
+ 
+
+
+ .menu-list-item {
+  line-height: 118%;
+    display: flex;
+    /* align-content: space-evenly; */
+    justify-content: space-between;
+    font-size: xx-large;
+    align-items: center;
+ }
+

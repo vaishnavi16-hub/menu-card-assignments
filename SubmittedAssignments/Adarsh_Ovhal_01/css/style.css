@@ -1,0 +1,290 @@
+
+.background-image img{
+	position: absolute;
+	width:249mm;
+    height: 357mm;
+}
+
+.menu-list-group {
+  position: absolute;
+}
+
+.menu-list-group:nth-child(odd) {
+  width: 103mm;
+    height: auto;
+    border: #05050508 solid 1pt;
+    position: absolute;
+    left: 125mm;
+    top: 70mm;
+}
+
+.menu-list-group:nth-child(even) {
+  width: 100mm;
+    height: auto;
+    /* border: #09040400 solid 1pt; */
+    position: absolute;
+    right: 116mm;
+    bottom: 31mm;
+}
+
+body .menu-wrapper {
+    /* border: 6pt solid white; */
+   margin: auto;
+   overflow: hidden;
+    background: linear-gradient(to bottom, rgb(1, 0, 0) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+   background-blend-mode: multiply,multiply;
+   left: auto;
+   top: 50mm;
+   width: 250mm;
+   height: 350mm;
+   position: relative;
+   border-radius: 10mm;
+ }
+
+.box2
+ {
+   height: 310pt;
+    width: 4pt;
+    position: absolute;
+    left: 595pt;
+    top: 250pt;
+    background-color: rgb(184, 35, 0);
+}
+
+.box3
+ {
+  height: 220pt;
+    width: 3pt;
+    position: absolute;
+    left: 310pt;
+    top: 660pt;
+    background-color: rgb(184, 35, 0);
+}
+ 
+  .restorent-name
+ {
+   color: rgb(245, 89, 0);
+    font-weight: bolder;
+    font-size: 55pt;
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    left: 73pt;
+    top: 40pt;
+	text-shadow: 4.5pt 1.5pt 3pt rgba(0, 0, 0, 0.5);
+ }
+ 
+ .restorent-discription
+ {
+   color: rgb(198, 43, 0);
+    font-weight: bold;
+    font-size: 50pt;
+    font-family: "Oswald", sans-serif;
+    position: relative;
+	text-shadow: 3pt 1.5pt 3pt rgba(0, 0, 0, 0.5);
+	
+    left: 74pt;
+    top: 30pt;
+ }
+ 
+ .restaurant-add-content
+ {
+  width: 1000pt;
+    position: absolute;
+    top: -15pt;
+    left: -269pt;
+ }
+ 
+ .restaurant-phone
+ {
+  position: absolute;
+  top: 950pt;
+  left: 790pt;
+  font-size: 17pt;
+  color: rgb(184, 35, 0);
+  font-weight: bold;
+ }
+ 
+ .restaurant-web
+ {
+  position: absolute;
+  top: 950pt;
+  left: 310pt;
+  font-size: 17pt;
+  color: rgb(184, 35, 0);
+  font-weight: bold;
+  
+ }
+ 
+ .restaurant-email
+ {
+  position: absolute;
+    top: 950pt;
+    left: 540pt;
+    font-size: 17pt;
+    color: rgb(184, 35, 0);
+    font-weight: bold;
+ }
+
+ .menu-list-heading
+ {
+  padding-left: 2mm;
+    padding-bottom: 4mm;
+    font-weight: 900;
+    font-size: 29pt;
+    font-family: auto;
+    /* font-style: oblique; */
+    color: rgb(184, 35, 0);
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+ }
+
+ 
+ 
+ 
+ .img1
+ {
+    position: absolute;
+    top: 35pt;
+    right: 355pt;
+    /* size: 65pt; */
+    height: 200pt;
+    width: 218pt;
+    filter: drop-shadow(15pt 68.25pt 53.25pt black);
+    
+    
+}
+
+
+
+ /* .img-hover {
+  width: 257pt;
+  transition: transform 6s linear;
+}
+
+.img-hover:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+ .img2
+ {
+   transform: rotateY(45deg);
+    position: absolute;
+    top: 591pt;
+    right: 123pt;
+    /* size: 65pt; */
+    height: 35pt;
+    
+ }
+
+
+ .img3
+ {
+ position: absolute;
+    top: 15pt;
+    right: -310pt;
+    height: 269pt;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(21.75pt 53.25pt 66pt black);
+}
+
+ .img-hover1 {
+  width: 250pt;
+  transition: transform 6s linear;
+}
+
+.img-hover1:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ 
+
+ .img4
+ {
+  transform: rotate(182deg);
+    height: 67pt;
+    position: absolute;
+    top: 513pt;
+    right: 581pt;
+}
+ .img5
+ {
+      transform: rotate(177deg);
+    height: 64pt;
+    position: absolute;
+    top: 72pt;
+    right: 84pt;
+ }
+
+ .img6
+ {
+   transform: rotate(92deg);
+    height: 77pt;
+    position: absolute;
+    top: -12pt;
+    right: 626pt;
+}
+ 
+
+ .img7
+ {
+   height: 153pt;
+    position: absolute;
+    top: 67pt;
+    right: 43pt;
+ }
+
+ .img8
+ {
+   height: 72pt;
+    position: absolute;
+    top: 120pt;
+    right: 209pt;
+ }
+
+ 
+
+
+
+
+ .menu-list-price
+ {
+   line-height: 39pt;
+   font-weight: 800;
+    display: grid;
+    font-size: 21pt;
+    position: absolute;
+    top: 294pt;
+    left: 270pt;
+ }
+
+ 
+
+
+ .menu-list-item {
+  line-height: 118%;
+    display:flex;
+    /* align-content: space-evenly; */
+    justify-content:space-between;
+    font-size: xx-large;
+    align-items: center;
+	top:20mm;
+	color:rgb(133 51 32);
+ }

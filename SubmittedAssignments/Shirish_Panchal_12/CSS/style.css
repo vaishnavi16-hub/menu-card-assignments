@@ -1,0 +1,293 @@
+body {
+  background-color: #0a0a0a;
+  color: #f6f3f3;
+}
+
+.menu-list-group {
+position: absolute;
+}
+
+.menu-list-group:nth-child(odd) {
+  width: 70mm;
+  height: auto;
+  border: #05050508 solid 0.352778mm;
+  position: absolute;
+  left: 25mm;
+  top: 80mm;
+
+}
+
+.menu-list-group:nth-child(even) {
+  width: 72mm;
+  height: auto;
+  border: #09040400 solid 0.352778mm;
+  position: absolute;
+  right: 24mm;
+  bottom: 120mm;
+
+}
+.menu-list-group1:nth-child(odd) {
+  width: 70mm;
+  height: auto;
+  border: #05050508 solid 0.352778mm;
+  position: absolute;
+  left: -125mm;
+  top: 0mm;
+
+}
+
+.menu-list-group2:nth-child(even) {
+  width: 72mm;
+  height: auto;
+  border: #09040400 solid 0.352778mm;
+  position: absolute;
+  right: 0mm;
+  bottom: 75mm;
+
+}
+
+
+body .menu-wrapper {
+  border: 2.11667mm solid white;
+ margin: auto;
+ overflow: hidden;
+  /* background: -gradient(to bottom,  0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply; */
+ left: auto;
+ top: auto;
+ width: 250mm;
+ height: 350mm;
+ position: relative;
+}
+
+.restorent-name{
+  color: #c70505;
+  font-weight: bolder;
+  font-size: 69pt;
+  font-style: normal;
+  position: absolute;
+  left: 70mm;
+  top: 37mm;
+}
+
+.restorent-discription
+{
+  color: white;
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 60pt;
+  font-style: normal;
+  position: absolute;
+  left: 148mm;
+  top: 54mm;
+}
+
+.restaurant-add-content
+{
+  width: 352.778mm;
+  position: absolute;
+  top: 238.478mm;
+  left: 27.5167;
+  color:#FFEB3B;
+}
+
+.restaurant-phone
+{
+position: absolute;
+top: 147pt;
+left: 342pt;
+font-size: 20pt;
+}
+
+.restaurant-web
+{
+position: absolute;
+top: 62.7944mm;
+left: 120.65mm;
+font-size: 20pt;
+}
+
+.restaurant-email
+{
+position: absolute;
+  top: 74.0833mm;
+  left: 120.65mm;
+  font-size: 20pt;
+}
+
+.menu-list-heading
+{
+  padding-left: -1mm;
+  padding-bottom: 4mm;
+  font-size: 33pt;
+  font-family: "Timmana", sans-serif;
+  font-weight: 600;
+  /* font-style: oblique; */
+  color: #e7ce0e;
+}
+.menu-list-heading1{
+  padding-left: -1mm;
+  padding-bottom: 4mm;
+  font-size: 33pt;
+  font-family: "Timmana", sans-serif;
+  font-weight: 600;
+  /* font-style: oblique; */
+  color: #e7ce0e;
+
+}
+.menu-list-heading2{
+  padding-left: -1mm;
+  padding-bottom: 4mm;
+  font-size: 33pt;
+  font-family: "Timmana", sans-serif;
+  font-weight: 600;
+  /* font-style: oblique; */
+  color: #e7ce0e;
+
+}
+
+
+
+
+.img1
+{
+  position: absolute;
+  top: 177.8mm;
+  right: 178.153mm;
+  width: 123.119mm;
+  height: 92.075mm;
+  object-fit: cover;    
+     
+}
+
+.img-hover {
+width: 90.6639mm;
+transition: transform 6s linear;
+}
+
+.img-hover:hover {
+animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+.img2
+{
+  transform: rotateY(45deg);
+  position: absolute;
+  top: -208mm;
+  right: -54mm;
+  /* size: 65pt; */
+  height: 12.3472mm;
+}
+
+
+.img3
+{ 
+position: absolute;
+  top: 19.4028mm;
+  right: 124.178mm;
+  /* size: 65pt; */
+  height: 94.8972mm;
+  border-radius: 50%;
+  border: 2mm solid red;
+  object-fit: cover;
+
+}
+
+.img-hover1 {
+width: 95.6028mm;
+transition: transform 6s linear;
+}
+
+.img-hover1:hover {
+animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+
+
+
+.img4
+{
+ height: 10.5833mm;
+  position: absolute;
+  top: 50.0944mm;
+  right: 58.9139mm;
+}
+
+.img5
+{
+ height: 10.5833mm;
+  position: absolute;
+  top: 158.044mm;
+  right: 34.925mm;
+}
+
+.img6
+{
+ transform: rotate(250deg);
+  height: 10.5833mm;
+  position: absolute;
+  top: 159.808mm;
+  right: 45.1556mm;
+}
+
+.img7
+{
+ height: 53.975mm;
+  position: absolute;
+  top: 12.7mm;
+  right: 15.2mm;
+}
+
+.img8{
+ height: 25.4mm;
+  position: absolute;
+  top: 42.3333mm;
+  right: 73.7306mm;
+}
+
+
+
+
+
+
+.menu-list1-price
+{
+ line-height: 13.75mm;
+ font-weight: 800;
+  display: grid;
+  font-size: 21pt;
+  position: absolute;
+  top: 7mm;
+  left: 93.8389mm;  
+}
+
+
+
+
+.menu-list-item {
+line-height: 118%;
+  display: flex;
+  /* align-content: space-evenly; */
+  justify-content: space-between;
+  font-size: 20pt;
+  align-items: center;
+}
+

@@ -1,0 +1,252 @@
+body {
+    background-color: #0a0a0a;
+    color: #f6f3f3;
+}
+
+.menu-list-group {
+  position: absolute;
+}
+
+.menu-list-group:nth-child(odd) {
+  width: 93mm;
+  height: auto;
+  border: #05050508 solid 1pt;
+  position: absolute;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 6pt;
+  line-height: 2;
+  left: 32mm;
+  top: 90mm;
+}
+
+.menu-list-group:nth-child(even) {
+  width: 93mm;
+  height: auto;
+  border: #09040400 solid 1pt;
+  position: absolute;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  FONT-SIZE: 6PT;
+  line-height: 2;
+  right: 33mm;
+  bottom: 66mm;
+}
+
+body .menu-wrapper {
+    border: 6pt solid white;
+   margin: auto;
+   overflow: hidden;
+    background: linear-gradient(to bottom, rgb(1, 0, 0) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+   background-blend-mode: multiply,multiply;
+   left: auto;
+   top: auto;
+   width: 250mm;
+   height: 350mm;
+   position: relative;
+ }
+ 
+.stroke{
+  position: absolute;
+  top: 818pt;
+  left: 175pt;
+  width: 120mm;
+  border: 1mm dotted goldenrod;
+  z-index: 4;
+
+}
+
+ .restorent-name
+ {
+  color: #f18f08;
+  font-weight: bolder;
+  font-size: 53pt;
+  font-style: normal;
+  position: relative;
+  left: 97pt;
+  top: 72pt;
+ }
+ 
+ .restorent-discription
+ {
+  color: #f7f7f7;
+  font-weight: bolder;
+  font-size: 84pt;
+  font-style: normal;
+  position: relative;
+  left: 95pt;
+  top: 30pt;
+ }
+ .restorent-discription-2 {
+  color: #f18f08;
+  font-weight: bolder;
+  font-size: 22pt;
+  font-style: normal;
+  position: relative;
+  left: 95pt;
+  top: 8pt;
+}
+ 
+ .restaurant-add-content
+ {
+  width: 1000pt;
+    position: absolute;
+    top: -15pt;
+    left: -269pt;
+ }
+ 
+ .restaurant-phone
+ {
+  position: absolute;
+  top: 852pt;
+  left: 394pt;
+  font-size: 20pt;
+ }
+ 
+ .restaurant-web
+ {
+  position: absolute;
+  top: 889pt;
+  left: 496pt;
+  font-size: 20pt;
+ }
+ 
+ .restaurant-email
+ {
+  position: absolute;
+  top: 853pt;
+  left: 592pt;
+  font-size: 20pt;
+ }
+
+ .menu-list-heading
+ {
+  padding-left: 3mm;
+    padding-bottom: 4mm;
+    font-weight: 900;
+    font-size: 29pt;
+    font-family: auto;
+    /* font-style: oblique; */
+    color: #030202;
+ }
+
+ 
+ 
+ 
+ .img1
+ {
+  transform: rotateZ(634deg);
+  position: absolute;
+  top: 95pt;
+  right: 80pt;
+  size: 22pt;
+  height: 211pt;
+  object-fit: cover;  
+ }
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ .img2
+ {
+   transform: rotateY(45deg);
+    position: absolute;
+    top: 591pt;
+    right: 123pt;
+    /* size: 65pt; */
+    height: 35pt;
+ }
+
+
+ .img-hover1 {
+  width: 271pt;
+  transition: transform 6s linear;
+}
+
+.img-hover1:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ 
+
+ .img4
+ {
+  height: 977pt;
+  position: absolute;
+  top: 3pt;
+  right: 2pt
+ }
+
+ .img5
+ {
+   height: 30pt;
+    position: absolute;
+    top: 448pt;
+    right: 99pt;
+ }
+
+ .img6
+ {
+  transform: rotate(250deg);
+  height: 221pt;
+  position: absolute;
+  top: 360pt;
+  right: 30pt;
+ }
+
+ .img7
+ {
+  height: 176pt;
+  width: 211pt;
+  position: absolute;
+  top: 622pt;
+  right: 389pt;
+  border-radius: 50%;
+ }
+
+ .img8
+ {
+   height: 72pt;
+    position: absolute;
+    top: 120pt;
+    right: 209pt;
+ }
+
+ .menu-list1-price
+ {
+   line-height: 39pt;
+   font-weight: 800;
+    display: grid;
+    font-size: 21pt;
+    position: absolute;
+    top: 294pt;
+    left: 266pt;
+ }
+
+ 
+
+
+ .menu-list-item {
+    line-height: 118%;
+    display: flex;
+    /* align-content: space-evenly; */
+    justify-content: space-between;
+    font-size: xx-large;
+    align-items: center;
+ }
+

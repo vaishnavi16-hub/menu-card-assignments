@@ -1,0 +1,273 @@
+body {
+  background-color: #0a0a0a;
+  color: #f6f3f3;
+  height: 50mm;
+  width: 30mm;
+}
+
+.menu-list-group {
+  position: absolute;
+}
+
+.menu-list-group:nth-child(odd) {
+  width: 103mm;
+  height: auto;
+  border: #05050508 solid 1pt;
+  left: 21mm;
+  top: 238mm;
+}
+
+.menu-list-group:nth-child(even) {
+  width: 100mm;
+  height: auto;
+  border: #09040400 solid 1pt;
+  right: 130mm;
+  bottom: 123mm;
+}
+
+/* Specific rule for the third element */
+.menu-list-group:nth-child(3) {
+  width: 100mm;
+  height: auto;
+  border: #09040400 solid 1pt;
+  left: 22mm;
+  top: 47mm;
+}
+
+body .menu-wrapper {
+  border: 11mm solid white;
+  margin: auto;
+  margin-top: 45mm;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgb(1, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+  background-blend-mode: multiply, multiply;
+  left: auto;
+  top: auto;
+  width: 273mm;
+  height: 385mm;
+  position: relative;
+}
+
+.bgimg {
+  position: absolute;
+  width: 250mm;
+  height: 350mm;
+  background-size: 100%;
+}
+
+.bgimg .img0 {
+  width: 274mm;
+  height: 385mm;
+}
+
+
+.borders {
+  position: relative;
+  top: 43mm;
+  left: 26mm;
+  width: 18mm;
+  border-top: 3pt solid #FFEB3B;
+}
+
+.restorent-name {
+  color: rgb(228, 209, 182);
+  font-weight: bolder;
+  font-size: 51pt;
+  font-style: normal;
+  position: relative;
+  left: 23mm;
+  top: 5mm;
+}
+
+.restorent-discription {
+  color: rgb(228, 209, 182);
+  font-weight: bolder;
+  font-size: 51pt;
+  font-style: normal;
+  position: relative;
+  left: 23mm;
+  top: 1.8mm;
+}
+
+.restaurant-add-content {
+  width: 350mm;
+  position: absolute;
+  top: -5mm;
+  left: -94mm;
+}
+
+.restaurant-phone {
+  position: absolute;
+    bottom: -327mm;
+    left: 115mm;
+    font-size: 8mm;
+    top: 347mm;
+}
+
+.restaurant-web {
+  position: absolute;
+    top: 347mm;
+    left: 212mm;
+    font-size: 7mm;
+    color: rgb(228, 209, 182);
+}
+
+.restaurant-email {
+  position: absolute;
+    top: 30mm;
+    left: 243mm;
+    font-size: 7mm;
+    color: rgb(228, 209, 182);
+}
+
+.menu-list-heading {
+  font-weight: 900;
+  font-size: 29pt;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 15mm;
+  color: #ffffff;
+
+}
+
+
+
+
+.img1 {
+  transform: rotateZ(329deg);
+    position: absolute;
+    top: 18mm;
+    right: -92mm;
+    /* size: 65pt; */
+    height: 55mm;
+    border-radius: 50%;
+    border: 1.8mm solid red;
+    object-fit: cover;
+
+
+}
+
+.img-hover {
+  width: 55mm;
+  transition: transform 0.1s linear;
+}
+
+.img-hover:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.img2 {
+  transform: rotateY(45deg);
+  position: absolute;
+  top: 208mm;
+  right: 43mm;
+  /* size: 65pt; */
+  height: 12mm;
+}
+
+
+.img3 {
+  position: absolute;
+    top: 25mm;
+    right: -93mm;
+    /* size: 65pt; */
+    height: 55mm;
+    border-radius: 50%;
+    border: 2mm solid red;
+    object-fit: cover;
+
+}
+
+.img-hover1 {
+  width: 95mm;
+  transition: transform 6s linear;
+}
+
+.img-hover1:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.img4 {
+  height: 10mm;
+  position: absolute;
+  top: 50mm;
+  right: 59mm;
+}
+
+.img5 {
+  height: 10mm;
+  position: absolute;
+  top: 158mm;
+  right: 35mm;
+}
+
+.img6 {
+  transform: rotate(250deg);
+  height: 10mm;
+  position: absolute;
+  top: 159mm;
+  right: 45mm;
+}
+
+.img7 {
+  height: 54mm;
+  position: absolute;
+  top: 12.7mm;
+  right: 15mm;
+}
+
+.img8 {
+  height: 25mm;
+  position: absolute;
+  top: 42mm;
+  right: 73mm;
+}
+
+
+.menu-list1-price {
+  line-height: 13mm;
+  font-weight: 800;
+  display: grid;
+  font-size: 24pt;
+  position: absolute;
+  top: 103mm;
+  left: 93mm;
+}
+
+.menu-list {
+  bottom: 0mm;
+  left: 0mm;
+}
+
+
+.menu-list-item {
+  margin-top: 8mm;
+  line-height: 1mm;
+  display: flex;
+  /* align-content: space-evenly; */
+  justify-content: space-between;
+  font-size: 24pt;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

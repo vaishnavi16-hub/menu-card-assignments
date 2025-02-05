@@ -1,0 +1,317 @@
+body {
+    background-color: #0a0a0a;
+    color: #f6f3f3;
+}
+
+.menu-list-group {
+  position: absolute;
+}
+
+.menu-list-group:nth-child(odd) {
+  width: 100mm;
+  height: 50mm;
+  border: #05050508 solid 1pt;
+  position: absolute;
+  left: 72mm;
+  top: 69mm;
+  color: #030202;
+}
+
+.menu-list-group:nth-child(even) {
+  width: 100mm;
+  height: 50mm;
+  border: #09040400 solid 1pt;
+  position: absolute;
+  right: 72mm;
+  bottom: 98mm;
+  color: #0a0a0a;
+}
+
+body .menu-wrapper {
+   border: 6pt solid white;
+   margin: auto;
+   overflow: hidden;
+   background-color: rgb(249, 240, 214);
+   background-blend-mode: multiply,multiply;
+   left: auto;
+   top: auto;
+   width: 250mm;
+   height: 350mm;
+   position: relative;
+ }
+ .radius{
+  position: absolute;
+  margin: 22mm;
+  border: 2.25pt solid black;
+  padding: 70mm;
+  padding-right: 140mm;
+  padding-bottom: 251mm;
+  padding-left: 104mm;
+  padding-top: 93mm;
+  z-index: 3;
+  top: -22mm;
+  left: -22mm;
+  border-radius: 10mm;
+  border-color: #0a0a0a;
+ }
+
+
+ .restorent-name
+ {
+  color: #1a1919;
+  font-weight: bolder;
+  font-size: 33pt;
+  font-style: normal;
+  position: relative;
+  left:77.963mm;
+  top: 10.583mm;
+  width: 100mm;
+  background-color: rgb(255, 207, 84);
+ }
+ 
+ .restorent-discription
+ {
+    color: #0f0f0f;
+    font-weight: bolder;
+    font-size: 33pt;
+    font-style: normal;
+    position: relative;
+    left: 124.530mm;
+    top: -6.702mm;
+ }
+ 
+ .restaurant-add-content
+ { 
+  width:352.77mm;
+  position: absolute;
+  top: -16.227mm;
+  left: -48.330mm;
+ }
+ 
+ .restaurant-phone
+ {
+  position: absolute;
+  top: -51.858mm;
+  left: 120.65mm;
+  font-size: 20pt;
+  color:#030202;
+ }
+ 
+ .restaurant-web
+ {
+  position: absolute;
+  top: 178pt;
+  left: 342pt;
+  font-size: 20pt;
+  color:#0a0a0a;
+ }
+ 
+ .restaurant-email
+ {
+  position: absolute;
+  top: 74.083mm;
+  left: 120.65mm;
+  font-size: 20pt;
+  color: #0f0f0f;
+ }
+
+ .menu-list-heading
+ {
+  padding-left: -5mm;
+  padding-bottom: -1mm;
+  font-weight: 900;
+  font-size: 29pt;
+  font-family: auto;
+  /* font-style: oblique; */
+  color: #030202;
+ }
+ 
+ .img1
+ {
+  transform: rotateZ(359deg);
+  position: absolute;
+  top: 4.586mm;
+  right: 195.086mm;
+  /* size: 65pt; */
+  height:94.897mm;
+  object-fit: cover;
+  z-index: 2;
+       
+       
+ }
+
+ .img-hover {
+  width: 90.663mm;
+  transition: transform 6s linear;
+}
+
+.img-hover:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ .img2
+ {
+  position: absolute;
+  top: 119.238mm;
+  right: 180.622mm;
+  /* size: 65pt; */
+  height: 94.897mm;
+  z-index: 2;
+ }
+
+
+ .img3
+ {
+  position: absolute;
+  top: 236.361mm;
+  right: 188.736mm;
+  /* size: 65pt; */
+  height: 94.897mm;
+  object-fit: cover;
+  z-index: 2;
+    
+
+ }
+
+ .img-hover1 {
+  width: 95.602mm;
+  transition: transform 6s linear;
+}
+
+.img-hover1:hover {
+  animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ 
+
+ .img4
+ {
+  height: 94.897mm;
+  position: absolute;
+  top: 2.116mm;
+  right: -39.158mm;
+  z-index: 2;
+ }
+
+ .img5
+ {
+  height: 94.897mm;
+  position: absolute;
+  top: 113.947mm;
+  right: -14.816mm;
+  z-index: 2;
+ }
+
+ .img6
+ {
+  transform: rotate(270deg);
+  height: 88.194mm;
+  position: absolute;
+  top: 243.416mm;
+  right: -61.736mm;
+  z-index: 2;
+ }
+
+ .img7
+ {
+  height: 23.636mm;
+  position: absolute;
+  top: 101.6mm;
+  right: 208.138mm;
+ }
+
+ .img8
+ {
+  height: 23.636mm;
+  position: absolute;
+  top: 212.019mmt;
+  right: 224.013mm;
+ }
+
+ .img9
+ {
+  height: 33.513mm;
+  position: absolute;
+  top: 83.255mm;
+  right: 26.458mm;
+  z-index: 2;
+ }
+
+ .img10
+ {
+  height: 52.916mm;
+  position: absolute;
+  top:190.852mm;
+  right: 19.05mm;
+  transform: rotate(-89deg);
+  z-index: 2;
+ }
+
+ .img11
+ {
+  height: 31.75mm;
+  position: absolute;
+  top: 312.561mm;
+  right: 33.513mm;
+  z-index: 2;
+ }
+
+ .img12
+ {
+  height: 29.280mm;
+  position: absolute;
+  top: 320.322mm;
+  right: 76.552mm;
+ }
+
+ .img13{
+  height: 38.1mm;
+  position: absolute;
+  top: -1.058mm;
+  right: 83.961mm;
+  
+ }
+
+
+
+
+ .menu-list1-price
+ {
+  line-height: 13.758mm;
+  font-weight: 800;
+  display: grid;
+  font-size: 7.408mm;
+  position: absolute;
+  top:103.716mm;
+  left:93.838mm;
+ }
+
+ 
+
+
+ .menu-list-item {
+  line-height: 118%;
+  display: flex;
+   /* align-content: space-evenly; */
+  justify-content: space-between;
+  font-size: xx-large;
+  align-items: center;
+ }
+
