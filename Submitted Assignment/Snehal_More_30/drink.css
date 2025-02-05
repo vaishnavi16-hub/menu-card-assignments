@@ -1,5 +1,5 @@
 .menu-wrapper{
-  border-color: solid black;
+  border: 0.1mm solid black;
   border-radius: 5mm;
   background: linear-gradient(50deg, #ffe96e 0%, #ffe96e 45%, #f6e6a3 85%);
   background-blend-mode: multiply, multiply;
@@ -35,9 +35,9 @@
   font-style: italic;
   font-size: 45mm;
   font-weight: bolder;
-  position: relative;
-  top: 30mm;
-  left: 30mm;
+  position: absolute;
+  top: 40mm;
+  left: 100mm;
 }
 
 .menu-header h2 {
@@ -46,11 +46,11 @@
   color: black;
   font-family: 'Arial', sans-serif;
   font-size: 15mm;
-  position: relative;
-  top: 2mm;
-  left: 30mm;
+  position: absolute;
+  top: 80mm;
+  left: 140mm;
 }
-.restorent-discription:before{
+.restaurant-discription:before{
   content:"";
   width: 28mm;
   height: 1.5mm;
@@ -60,7 +60,7 @@
   position: absolute;
 
 }
-.restorent-discription:after{
+.restaurant-discription:after{
   content:"";
   width: 28mm;
   height: 1.5mm;
@@ -70,8 +70,6 @@
   position: absolute;
 
 }
-
-
 .cataName {
   padding: 10mm;
   font-size: 10mm;
@@ -82,19 +80,9 @@
   text-align: center;
   color: #9c5716;
   font-size: 20mm;
-  position: relative;
-  left: 20mm;
-  bottom: 20mm;
-  font-style: italic;
-}
-
-.specials {
-  font-family: 'Estonia', cursive;
-  font-size: 25mm;
-  font-weight: bold;
-  margin-top: 1mm;
-  margin-left: 70mm;
-  text-align: start;
+  position: absolute;
+  right: 80mm;
+  top: 115mm;
   font-style: italic;
 }
 
@@ -104,9 +92,9 @@
   color: black;
   text-align: justify;
   padding-bottom: 2mm;
-  position: relative;
-  left: 115mm;
-  bottom:60mm;
+  position: absolute;
+  right: 30mm;
+  top: 150mm;
 }
 .special-item-price{
   font-size:5.5mm;
@@ -120,29 +108,20 @@
   text-align: center;
   font-size: 20mm;
   color: #9c5716;
-  position: relative;
-  right: 67mm;
-  top: 60mm;
+  position: absolute;
+  left: 30mm;
+  bottom: 100mm;
   font-style: italic;
 }
 
-.cocktails {
-  font-family: 'Estonia', cursive;
-  font-size: 25mm;
-  font-weight: bold;
-  margin-top: 1mm;
-  margin-left: 60mm;
-  text-align: start;
-  font-style: italic;
-}
 
 .cocktail-item {
   font-size: 5.5mm;
   font-family: 'Cutive', sans-serif;
   color: black;
-  position: relative;
-  left: 25mm;
-  bottom :15mm;
+  position: absolute;
+  left: 30mm;
+  bottom :30mm;
   text-align: justify;
 
 }

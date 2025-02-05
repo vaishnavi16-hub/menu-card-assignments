@@ -5,8 +5,8 @@ class MenuComponent extends HTMLElement {
     backgroundClass: 'menu-background',
     contentClass: 'menu-content',
     headerClass: 'menu-header',
-    restorentClass: 'restorent-name',
-    discriptionClass: 'restorent-discription',
+    restaurantClass: '.restaurant-name',
+    discriptionClass: '.restaurant-description',
     cataName: 'cataName',
     categoryClass: 'category-name',
     subcategoryClass: 'subcategory-name',
@@ -22,7 +22,7 @@ class MenuComponent extends HTMLElement {
       { src: 'IMG/sparkle.png', class: 'img5', alt: 'img5' },
       { src: 'IMG/sparkle.png', class: 'img6', alt: 'img6' },
     ],
-    restorent: 'Drinks',
+    restaurant: 'Drinks',
     discription: 'menu',
     category: 'Specials',
     subcategory: 'Cocktails',
@@ -123,10 +123,10 @@ class MenuComponent extends HTMLElement {
     header.classList.add(config.headerClass);
 
     // Title and subtitle
-    const restorent = document.createElement('h1');
-    restorent.textContent = data.restorent;
-    restorent.classList.add(config.restorentClass);
-    header.appendChild(restorent);
+    const restaurant = document.createElement('h1');
+    restaurant.textContent = data.restaurant;
+    restaurant.classList.add(config.restaurantClass);
+    header.appendChild(restaurant);
 
     const discription = document.createElement('h2');
     discription.textContent = data.discription;
