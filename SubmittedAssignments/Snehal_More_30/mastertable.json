@@ -1,0 +1,76 @@
+{
+    "name": "Menu MasterTable",
+    "userId": "678b4c83c79de48262b3484b",
+    "companyId": "669fa639c90f6b3694aae92a",
+    "relatedTo": "masters",
+    "appliedTo": "string",
+    "type": "StandAlone",
+    "isActionLibraryRequired": false,
+    "actionLibrary": [],
+    "isExternalApi": true,
+    "externalApiEndpoint": "string",
+    "externalApiCredentials": {},
+    "columnDefs": [
+        {
+            "title": "Title",
+            "field": "data.menu-title",
+            "isSort": true,
+            "isFilter": true,
+            "filterType": "text"
+        },
+        {
+            "title": "Subtitle",
+            "field": "data.menu-subtitle",
+            "isSort": true,
+            "isFilter": true,
+            "filterType": "text"
+        },
+        {
+            "title": "Category",
+            "field": "data.category-name",
+            "isSort": true,
+            "isFilter": true,
+            "filterType": "text"
+        },
+        {
+            "title": "Subcategory",
+            "field": "data.subcategory-name",
+            "isSort": true,
+            "isFilter": true,
+            "filterType": "text"
+        },
+        {
+            "template": [
+                {
+                    "type": "view",
+                    "icon": "eye",
+                    "class": "btn btn-primary",
+                    "tooltip": "View Details",
+                    "formId": ""
+                },
+                {
+                    "type": "edit",
+                    "icon": "pencil",
+                    "class": "btn btn-info",
+                    "tooltip": "Edit Menu",
+                    "formId": "6791e459afa609336dbd4c8c"
+                },
+                {
+                    "type": "delete",
+                    "icon": "trash",
+                    "class": "btn btn-danger",
+                    "tooltip": "Delete Menu",
+                    "confirmation": {
+                        "message": "Are you sure you want to delete this Menu?",
+                        "title": "Confirm Deletion"
+                    },
+                    "formId": "6791e459afa609336dbd4c8c"
+                }
+            ]
+        }
+    ],
+    "created": "2025-01-20T11:10:37.437Z",
+    "modified": "2025-01-25T12:44:38.328Z",
+    "dataParams": {},
+    "config": {}
+}

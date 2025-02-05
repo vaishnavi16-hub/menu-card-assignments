@@ -1,0 +1,94 @@
+{
+  "name": "MenuCardM",
+  "userId": "678b4c83c79de48262b3484b",
+  "companyId": "669fa639c90f6b3694aae92a",
+  "relatedTo": "masters",
+  "appliedTo": "",
+  "type": "StandAlone",
+  "isActionLibraryRequired": false,
+  "actionLibrary": [],
+  "isExternalApi": true,
+  "externalApiEndpoint": "",
+  "externalApiCredentials": {},
+  "formFields": [
+    {
+      "className": "section-label",
+      "template": "<div><strong>MenuCard Master Form</strong></div>"
+    },
+    {
+      "fieldGroupClassName": "row",
+      "fieldGroup": [
+          {
+                  "className": "col-12",
+                  "name": "title",
+                  "key": "name",
+                  "type": "input",
+                  "templateOptions": {
+                      "label": "Name",
+                      "required": true
+                  }
+              },
+               {
+                  "className": "col-6",
+                  "name": "Module",
+                  "key": "module",
+                  "type": "select",
+                  "templateOptions": {
+                      "label": "Module",
+                      "required": true,
+                      "options":[
+                          {"label": "Menu Card", "value": "module1"}                            
+                      ],
+                       "disabled": false
+                  }
+              },
+        {
+          "className": "col-6",
+          "key": "data.menu-title",
+          "type": "input",
+          "templateOptions": {
+            "label": "Enter a Heading",
+            "required": true
+          }
+        },
+        {
+          "className": "col-6",
+          "key": "data.menu-subtitle",
+          "type": "input",
+          "templateOptions": {
+            "label": "Enter a Sub Heading",
+            "required": true
+          }
+        },
+        {
+          "className": "col-6",
+          "key": "data.category-name",
+          "type": "input",
+          "templateOptions": {
+            "label": "Enter a Category",
+            "required": true
+          }
+        },
+        {
+          "className": "col-6",
+          "key": "data.subcategory-name",
+          "type": "input",
+          "templateOptions": {
+            "label": "Enter a Sub Category",
+            "required": true
+          }
+        },
+        {
+          "type": "button",
+          "templateOptions": {
+            "btnType": "primary",
+            "type": "submit",
+            "text": "Submit"
+          },
+          "key": "submitButton"
+        }
+      ]
+    }
+  ],
+  "formData": {}
+}

@@ -1,0 +1,58 @@
+{
+    "name": "MenuSearchPage",
+    "userId": "678b4c83c79de48262b3484b",
+    "companyId": "669fa639c90f6b3694aae92a",
+    "relatedTo": "masters",
+    "appliedTo": "",
+    "type": "Standalone",
+    "isActionLibraryRequired": true,
+    "actionLibrary": [
+        "string"
+    ],
+    "isExternalApi": true,
+    "externalApiEndpoint": "string",
+    "externalApiCredentials": {},
+    "columnDefs": [
+        {
+            "title": "Name",
+            "field": "name",
+            "isSort": true,
+            "isFilter": true,
+            "filterType": "text"
+        }
+        
+       
+    ],
+    "created": "2025-01-09T09:21:44.088Z",
+    "modified": "2025-01-09T09:21:44.088Z",
+    "dataParams": {"where": {"module": "SocialPost"}},
+    "config": {
+        "linkWrapperClass": "justify-content-center",
+        "imageClass": "img-fluid",
+        "cardsConfig": {
+            "linkWrapperClass": "justify-content-center"
+        },
+        "searchHeaderWrapperClass": " border mt-3 mb-4 rounded shadow-sm p-3 container",
+        "searchResultContainerClass": "border mb-4 rounded shadow-sm p-3 container"
+    },
+    "widgetId": "665407dbea0252152df5272c",
+    "dataMapping": {
+        "image":"thumbnail",
+        "heading": "name",
+        "subHeading": "",
+        "description": "",
+        "links": [
+            {
+                "fields": {
+                    "label": "Read More...",
+                    "url": "/page-details/:pageId/:pageTitle",
+                    "className": "btn btn-success text-light text-decoration-none fw-bold my-1"
+                },
+                "params": {
+                    "pageId": "id",
+                    "pageTitle": "name"
+                }
+            }
+        ]
+    }
+}
