@@ -1,12 +1,12 @@
 class MenuComponent extends HTMLElement {
   // Default configuration and data
   defaultConfig = {
-    wrapperclass: 'menu-wrapper',
+    wrapperClass: 'menu-wrapper',
     backgroundClass: 'menu-background',
     contentClass: 'menu-content',
     headerClass: 'menu-header',
-    restaurantClass: '.restaurant-name',
-    discriptionClass: '.restaurant-description',
+    restaurantClass: 'restaurant-name',
+    discriptionClass: 'restaurant-description',
     cataName: 'cataName',
     categoryClass: 'category-name',
     subcategoryClass: 'subcategory-name',
@@ -91,7 +91,7 @@ class MenuComponent extends HTMLElement {
     const data = this.data || this.defaultData;
 
     // Apply wrapper class
-    this.wrapper.classList.add(config.wrapperclass);  // class define in config
+    this.wrapper.classList.add(config.wrapperClass);  // class define in config
 
     // Background
     const background = document.createElement('div');
