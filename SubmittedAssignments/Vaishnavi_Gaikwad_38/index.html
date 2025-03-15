@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Cutive&family=Estonia&family=Great+Vibes&family=Metal&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Menu Card</title>
+</head>
+<body>
+  <!-- Usage of menu-component -->
+  <menu-component
+    config='{
+      "wrapperClass": "menu-wrapper",
+      "backgroundClass":"menu-background",
+      "contentClass": "menu-content",
+      "headerClass": "menu-header",
+      "restaurantClass": "restaurant-name",
+      "discriptionClass": "restaurant-discription",
+      "cataName": "cataName",
+      "classnumber":"card-no",
+      "categoryClass": "category-name",
+      "subcategoryClass": "subcategory-name",
+      "classbox": "box-1"
+    }'
+    data='{
+      "images": [
+        { "src": "img/background1.jpeg" },
+        { "src": "IMG/img11.png",  "class": "img11", alt: "img11" },
+        { "src": "IMG/img12.png",  "class": "img12", alt: "img12" },
+        { "src": "IMG/img13.png", "class": "img13", "alt": "img13" },
+        { "src": "IMG/img14.png", "class": "img14", "alt": "img14" },
+        { "src": "IMG/img15.png", "class": "img15", "alt": "img15" },
+        { "src": "IMG/img16.png", "class": "img16", "alt": "img16" },
+        { "src": "IMG/img17.png", "class": "img17", "alt": "img17" },
+        { "src": "IMG/img18.png", "class": "img18", "alt": "img18" },
+        { "src": "IMG/img19.png", "class": "img19", "alt": "img18" },
+        { "src": "IMG/img20.png", "class": "img20", "alt": "img20" },
+        { "src": "IMG/img21.png", "class": "img21", "alt": "img21" },
+        { "src": "IMG/img22.png", "class": "img22", "alt": "img22" },
+      ],
+      "restaurant": "PIZZA",
+      "discription": "MENU",
+      "category": "+4536373863",
+      "subcategory": "www.pizzahub.com",
+      "specialitems": [
+        { "name": "Pan Pizza.....", "price": "$50" },
+        { "name": "Beef Pizza......", "price": "$70" },
+        { "name": "Chile Pizza.......", "price": "$40" },
+        { "name": "Detroit Pizza......", "price": "$60" },
+        { "name": "Chicken Pizza.....", "price": "$50" },
+        { "name": "Mushroom Pizza.....", "price": "$30" }
+      ],
+      "cocktailitems": [
+      { "name": "Pan Pizza.....", "price": "$50" },
+      { "name": "Beef Pizza......", "price": "$70" },
+      { "name": "Chile Pizza.......", "price": "$40" },
+      { "name": "Detroit Pizza......", "price": "$60" },
+      { "name": "Chicken Pizza.....", "price": "$50" },
+      { "name": "Mushroom Pizza.....", "price": "$30" }
+
+      ]
+    }'>
+  </menu-component>
+
+  <script src="script.js"></script>
+</body>
+</html>
